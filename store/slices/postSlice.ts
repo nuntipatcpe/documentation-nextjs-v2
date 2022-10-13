@@ -8,7 +8,7 @@ type initialStateType = {
 };
 const initialValues: initialStateType = {
   search: "",
-  menubarTitle: [],
+  menubarTitle: [""],
   valueMenubar: "",
 };
 
@@ -18,7 +18,7 @@ const searchSlice = createSlice({
 
   reducers: {
     search: (state: initialStateType, actions) => {
-      console.log(actions.payload);
+      // console.log(actions.payload);
       state.search = actions.payload;
     },
     setMenubarTital: (state: initialStateType, actions) => {

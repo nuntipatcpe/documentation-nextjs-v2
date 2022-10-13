@@ -15,7 +15,7 @@ export default function Menubar({}: Props) {
       </div>
       <ul>
         {menubarTitle.map((e) => (
-          <Link href="/">
+          <Link href="/" key={e}>
             <a href="">{e}</a>
           </Link>
         ))}

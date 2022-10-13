@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { searchSelector, setMenubarTital } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
 
@@ -54,7 +54,7 @@ const Home = ({ posts }: PostsType) => {
   const { search } = useSelector(searchSelector);
   const dispatch = useAppDispatch();
 
-  let titleArray = posts
+  const titleArray = posts
     .filter((e) =>
       e.slug
         .toLowerCase()
@@ -77,8 +77,10 @@ const Home = ({ posts }: PostsType) => {
   );
 
   useEffect(() => {
-    dispatch(setMenubarTital(title));
-  }, []);
+    if (title) {
+      dispatch(setMenubarTital(title));
+    }
+  }, [dispatch]);
 
   return (
     <>

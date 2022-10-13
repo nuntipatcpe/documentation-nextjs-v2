@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 type Props = {};
 
-export default function header({}: Props) {
+export default function Header({}: Props) {
   const dispatch = useAppDispatch();
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -13,7 +13,7 @@ export default function header({}: Props) {
       dispatch(search(searchTerm));
     }, 500);
     return () => clearTimeout(delayDebounceFn);
-  }, [searchTerm]);
+  }, [searchTerm, dispatch]);
 
   return (
     <div className="header">

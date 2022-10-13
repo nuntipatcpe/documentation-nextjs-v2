@@ -19,10 +19,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <title>Documentation V.2</title>
-          <link rel="icon" href="/image/icons8-doc-100.png" />
-        </Head>
+        <Head />
+        <title>Documentation V.2</title>
+        <link rel="icon" href="/image/icons8-doc-100.png" />
+        {/* </Head> */}
         <body>
           <Main />
           <NextScript />
