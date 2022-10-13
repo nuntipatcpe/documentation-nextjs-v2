@@ -1,0 +1,21 @@
+@use "../utils" as *;
+.menubar {
+  min-width: $magin-munu;
+  height: 100vh;
+  top: 0;
+  background-color: transparent;
+  position: fixed;
+  overflow: auto;
+  padding-bottom: 2rem;
+  ul {
+    width: 100%;
+    @include flex(column);
+    a {
+      margin: 10px 0;
+    }
+  }
+  .img {
+    height: 100px;
+    @include flex;
+  }
+}
