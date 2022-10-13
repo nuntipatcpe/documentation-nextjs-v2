@@ -1,21 +1,41 @@
 .markdown {
   padding: 0 2rem;
-  a {
+  margin-bottom: 5rem;
+  font-weight: 500;
+  .home {
     width: 1000px;
     height: 100px;
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: 2rem;
+    position: fixed;
+    top: 0;
+  }
+
+  li {
+    padding: 0.2rem 0;
+  }
+  a {
+    color: blueviolet;
+    text-decoration: underline;
   }
   .content {
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     padding: 0 2rem;
-    h1 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       margin: 3rem 0;
       padding-bottom: 1rem;
       border-bottom: 1px solid rgba($color: rgb(95, 95, 95), $alpha: 0.5);
+    }
+    span {
+      letter-spacing: 0.5px;
     }
   }
 }

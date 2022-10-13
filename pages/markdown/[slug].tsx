@@ -32,9 +32,14 @@ export async function getStaticProps({ params: { slug } }: any) {
 function MarkdownPage({ frontmatter, content }: any) {
   return (
     <div className="markdown">
-      <Link href={"/"}>
-        <a>{frontmatter.title}</a>
-      </Link>
+      <div className="home">
+        <Link href={"/"}>
+          <a>
+            {"< "}
+            {frontmatter.title}
+          </a>
+        </Link>
+      </div>
       <div className="content">
         <Markdown
           options={{

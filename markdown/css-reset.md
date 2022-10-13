@@ -7,9 +7,11 @@ name: "Reset css"
 # Reset
 
 - Montserrat
+
   ```
   @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
   ```
+
 - Kanit
 
   ```
