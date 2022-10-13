@@ -3,9 +3,9 @@
   margin-left: $magin-munu;
   height: 100px;
   display: grid;
-  grid-template-columns: 300px 1fr 300px;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 
   input {
     margin: 0 auto;
@@ -21,6 +21,18 @@
     &:focus {
       @include trans-200ms(width);
       width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .header {
+    .logo {
+      font-size: 0.8rem;
+      margin-right: 1rem;
+    }
+    input {
+      min-width: 100px;
+      width: 100%;
     }
   }
 }
