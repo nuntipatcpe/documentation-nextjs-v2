@@ -1,10 +1,11 @@
 import Layout from "@/components/layouts";
-import type { NextPage } from "next";
 import React, { useEffect, useState } from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import Image from "next/image";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { searchSelector, setMenubarTital } from "@/store/slices/postSlice";
+import { useAppDispatch } from "@/store/store";
 
 type Props = {
   posts: Array<{
@@ -50,46 +51,25 @@ export async function getStaticProps() {
 }
 
 const Home = ({ posts }: Props) => {
-  // let checkGroup = "";
-  // let title = posts
-  //   .filter((e) => {
-  //     if (e.frontmatter.title !== checkGroup) {
-  //       checkGroup = e.frontmatter.title;
-  //       return e;
-  //     }
-  //   })
-  //   .map((e) => e.frontmatter.title);
+  const { search } = useSelector(searchSelector);
 
-  // posts = [
-  //   {
-  //     slug: "--",
-  //     frontmatter: {
-  //       title: "test01",
-  //       popular: 0,
-  //     },
-  //   },
-  //   {
-  //     slug: "--",
-  //     frontmatter: {
-  //       title: "test02",
-  //       popular: 0,
-  //     },
-  //   },
-  //   {
-  //     slug: "--",
-  //     frontmatter: {
-  //       title: "test02",
-  //       popular: 0,
-  //     },
-  //   },
-  // ];
-  let titleArray = posts.map((e) => e.frontmatter.title);
-  //titleArray = ["test01","test02","test02"]
+  let titleArray = posts
+    .filter((e) => e.slug.toLowerCase().includes(search.toLowerCase()))
+    .map((e) => e.frontmatter.title);
+
   let title = titleArray.filter(
     (e: string, index: number) => titleArray.indexOf(e) === index
   );
 
-  const fileName = posts;
+  useEffect(() => {
+    dispatch(setMenubarTital(title));
+  }, []);
+
+  const fileName = posts.filter((e) =>
+    e.slug.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const dispatch = useAppDispatch();
 
   return (
     <>

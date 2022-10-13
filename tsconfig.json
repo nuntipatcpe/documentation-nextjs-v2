@@ -18,6 +18,7 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/sass/*": ["sass/*"],
+      "@/store/*": ["store/*"],
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
