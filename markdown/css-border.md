@@ -23,24 +23,36 @@ border-radius: 5px
 
 - Border-style :(type border)
 
-```
+<code language="css">
 border-style : double
-```
+</code>
 
 - Border-xxx-style :(type border)
 
 ```
+
 border-top-style : double
+
 ```
 
 ```
+
 border-left-style : double
+
 ```
 
 ```
+
 border-right-style : double
+
 ```
 
 ```
+
 border-bottom-style : double
+
+```
+
+```
+
 ```

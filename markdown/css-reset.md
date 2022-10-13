@@ -4,17 +4,23 @@ popular: 0
 name: "Reset css"
 ---
 
-# Reset css
+# Reset
 
-## reset
+- Montserrat
+  ```
+  @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+  ```
+- Kanit
+
+  ```
+  @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+  ```
 
 <code language="css">
-@import url('https:\/\/fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-* {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  /* font-family: "Kanit", sans-serif; */
+{
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+//font-family: "Kanit", sans-serif;
 }
 body {
 display: flex;
@@ -26,14 +32,17 @@ padding: 0;
 }
 a {
 text-decoration: none;
-}</code>
+}
+</code>
 
 ## Reset all
 
 - font-family:**Montserrat**
-  <code language="css">
-  @import url('https:\/\/fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
-  </code>
+
+  ```
+  @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+  ```
+
   <code language="css">
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
