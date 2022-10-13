@@ -5,6 +5,8 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 type Props = {};
 //a11yDark
+//atomDark
+//dracula
 function Code({ children, language }: any) {
   const [copyAc, setCopyAc] = useState("copy");
   const [buttonDisabled, setButtonDisabled] = useState(false);
@@ -26,7 +28,7 @@ function Code({ children, language }: any) {
       </CopyToClipboard>
       <PrismLight
         language={language === undefined ? "javascript" : language}
-        style={theme.atomDark}
+        style={theme.dracula}
       >
         {children}
       </PrismLight>
