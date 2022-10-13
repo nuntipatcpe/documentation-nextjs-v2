@@ -1,3 +1,8 @@
+---
+title: "Vite react"
+popular: 0
+---
+
 ## Components
 
 <code language="javascript">
