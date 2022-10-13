@@ -1,6 +1,7 @@
 ---
 title: "Axios"
 popular: 10
+name: "Fetch"
 ---
 
 # Fetch

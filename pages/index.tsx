@@ -11,6 +11,7 @@ type Props = {
     slug: string;
     frontmatter: {
       title: string;
+      name: string;
       popular: number;
     };
   }>;
@@ -103,7 +104,7 @@ const Home = ({ posts }: Props) => {
                     if (e2.frontmatter.title === e) {
                       return (
                         <Link href={`/markdown/${e2.slug}`} key={e2.slug}>
-                          <a href="">{e2.slug}.md</a>
+                          <a href="">{e2.frontmatter.name}</a>
                         </Link>
                       );
                     }

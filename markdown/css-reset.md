@@ -1,6 +1,7 @@
 ---
 title: "Css"
 popular: 0
+name: "Reset css"
 ---
 
 # Reset css

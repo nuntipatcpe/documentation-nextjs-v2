@@ -1,6 +1,7 @@
 ---
 title: "Policy powershell"
 popular: 10
+name: "Policy powershell"
 ---
 
 # Error policy powershell

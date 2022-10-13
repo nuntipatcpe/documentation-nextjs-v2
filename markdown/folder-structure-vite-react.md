@@ -1,6 +1,7 @@
 ---
 title: "Vite react"
 popular: 0
+name: "Folder structure"
 ---
 
 ## Components
