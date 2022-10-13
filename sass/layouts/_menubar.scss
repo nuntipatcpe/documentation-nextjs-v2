@@ -1,6 +1,7 @@
 @use "../utils" as *;
 
 .menubar {
+  display: none;
   min-width: $magin-munu;
   width: $magin-munu;
   @include trans-300ms(width);

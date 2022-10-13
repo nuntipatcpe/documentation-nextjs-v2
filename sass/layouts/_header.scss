@@ -1,6 +1,7 @@
 @use "../utils/" as *;
 .header {
-  margin-left: $magin-munu;
+  // margin-left: $magin-munu;
+  margin: 0 auto;
   height: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;

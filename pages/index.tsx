@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { searchSelector, setMenubarTital } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
 
-type Props = {
+interface PostsType {
   posts: Array<{
     slug: string;
     frontmatter: {
@@ -16,7 +16,7 @@ type Props = {
       popular: number;
     };
   }>;
-};
+}
 
 export async function getStaticProps() {
   const files = fs.readdirSync("markdown");
@@ -50,26 +50,33 @@ export async function getStaticProps() {
   };
 }
 
-const Home = ({ posts }: Props) => {
+const Home = ({ posts }: PostsType) => {
   const { search } = useSelector(searchSelector);
+  const dispatch = useAppDispatch();
 
   let titleArray = posts
-    .filter((e) => e.slug.toLowerCase().includes(search.toLowerCase()))
+    .filter((e) =>
+      e.slug
+        .toLowerCase()
+        .replace(" ", "-")
+        .includes(search.toLowerCase().replace(" ", "-"))
+    ) //search from search bar
     .map((e) => e.frontmatter.title);
 
   let title = titleArray.filter(
     (e: string, index: number) => titleArray.indexOf(e) === index
   );
 
+  const fileName = posts.filter((e) =>
+    e.slug
+      .toLowerCase()
+      .replace(" ", "-")
+      .includes(search.toLowerCase().replace(" ", "-"))
+  );
+
   useEffect(() => {
     dispatch(setMenubarTital(title));
   }, []);
-
-  const fileName = posts.filter((e) =>
-    e.slug.toLowerCase().includes(search.toLowerCase())
-  );
-
-  const dispatch = useAppDispatch();
 
   return (
     <>

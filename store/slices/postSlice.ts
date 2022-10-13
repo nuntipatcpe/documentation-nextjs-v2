@@ -4,10 +4,12 @@ import { RootState } from "../store";
 type initialStateType = {
   search: string;
   menubarTitle: Array<string>;
+  valueMenubar: string;
 };
 const initialValues: initialStateType = {
   search: "",
   menubarTitle: [],
+  valueMenubar: "",
 };
 
 const searchSlice = createSlice({
@@ -21,6 +23,9 @@ const searchSlice = createSlice({
     },
     setMenubarTital: (state: initialStateType, actions) => {
       state.menubarTitle = actions.payload;
+    },
+    setValueMenubar: (state: initialStateType, actions) => {
+      state.valueMenubar = actions.payload;
     },
   },
 });

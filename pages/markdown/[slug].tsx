@@ -1,9 +1,9 @@
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import Layout from "@/components/layouts";
-
-type Props = {};
+import Link from "next/link";
+import Markdown from "markdown-to-jsx";
+import Code from "@/components/Code";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("markdown");
@@ -29,8 +29,27 @@ export async function getStaticProps({ params: { slug } }: any) {
   };
 }
 
-function Markdown({ frontmatter, content }: any) {
-  return <Layout>{content}</Layout>;
+function MarkdownPage({ frontmatter, content }: any) {
+  return (
+    <div className="markdown">
+      <Link href={"/"}>
+        <a>{frontmatter.title}</a>
+      </Link>
+      <div className="content">
+        <Markdown
+          options={{
+            overrides: {
+              code: {
+                component: Code,
+              },
+            },
+          }}
+        >
+          {content}
+        </Markdown>
+      </div>
+    </div>
+  );
 }
 
-export default Markdown;
+export default MarkdownPage;

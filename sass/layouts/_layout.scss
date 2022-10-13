@@ -1,7 +1,9 @@
 @use "../utils/" as *;
 .layout {
   main {
-    margin-left: $magin-munu;
+    width: 1000px;
+    margin: 0 auto;
+    // margin-left: $magin-munu;
     padding: 2rem;
   }
 }
