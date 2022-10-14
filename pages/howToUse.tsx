@@ -1,27 +1,16 @@
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
+import Link from "next/link";
 import LayoutMarkdown from "@/components/layouts/layoutlayoutHeaderMarkdown";
 
-export async function getStaticPaths() {
-  const files = fs.readdirSync("markdown/data");
-  const paths = files.map((fileName) => ({
-    params: {
-      slug: fileName.replace(".md", ""),
-    },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-}
+type Props = { content: string };
 
-export async function getStaticProps({ params: { slug } }: any) {
-  const fileName = fs.readFileSync(`markdown/data/${slug}.md`, "utf-8");
-  const { content } = matter(fileName);
+export async function getStaticProps() {
+  const readFile = fs.readFileSync(`markdown/useage.md`, "utf-8");
+  const { content } = matter(readFile);
   return {
     props: {
       content,
@@ -29,7 +18,7 @@ export async function getStaticProps({ params: { slug } }: any) {
   };
 }
 
-function MarkdownPage({ content }: any) {
+function howToUse({ content }: Props) {
   return (
     <LayoutMarkdown>
       <Markdown
@@ -47,4 +36,4 @@ function MarkdownPage({ content }: any) {
   );
 }
 
-export default MarkdownPage;
+export default howToUse;

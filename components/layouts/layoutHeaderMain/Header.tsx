@@ -21,7 +21,6 @@ export default function Header({}: Props) {
       <Link href={"/"}>
         <a className="logo">Documentation v.2</a>
       </Link>
-      {/* <span></span> */}
       <input
         type="text"
         placeholder="Serach"
@@ -30,6 +29,11 @@ export default function Header({}: Props) {
         // value={searchSelector.search}
         value={searchTerm}
       />
+      <Link href={"/howToUse"}>
+        <a href="" className="howToUse">
+          How to create file Markdown ?
+        </a>
+      </Link>
     </div>
   );
 }

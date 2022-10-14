@@ -10,9 +10,7 @@
   color: $secondary-1;
   position: fixed;
   width: 100vw;
-
   box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.3);
-
   z-index: 1000;
 
   .logo {
@@ -21,7 +19,6 @@
     align-items: center;
     font-weight: bold;
     font-size: 1.5rem;
-    // position: fixed;
     top: 0;
     left: 2rem;
     z-index: 1000;
@@ -44,16 +41,12 @@
       width: 70%;
     }
   }
-}
-@media screen and (max-width: 390px) {
-  .header {
-    .logo {
-      font-size: 0.8rem;
-      margin-right: 1rem;
-    }
-    input {
-      min-width: 100px;
-      width: 100%;
+  .howToUse {
+    color: $secondary-1;
+    font-size: 1rem;
+    &:hover {
+      @include trans-200ms();
+      transform: scaleX(0.95);
     }
   }
 }

@@ -5,6 +5,8 @@
 @import "./layouts/layout";
 
 @import "./pages/app";
-@import "./pages/markdown";
 
+@import "./components/markdown";
 @import "./components/code";
+@import "./components/search";
+@import "./components/inFileMarkdown";

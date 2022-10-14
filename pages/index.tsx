@@ -1,4 +1,3 @@
-import Layout from "@/components/layouts";
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
@@ -9,15 +8,16 @@ import { searchSelector } from "@/store/slices/postSlice";
 import { redundancyArray, sortArray } from "@/utils/array.util";
 import { Posts } from "../models/post.model";
 import Image from "next/image";
+import Layout from "@/components/layouts/layoutHeaderMain";
 
 export async function getStaticProps() {
-  const files = fs.readdirSync("markdown");
+  const files = fs.readdirSync("markdown/data");
 
   //sort by popula
   const posts = sortArray(
     files.map((fileName) => {
       const slug = fileName.replace(".md", "");
-      const readFile = fs.readFileSync(`markdown/${fileName}`, "utf-8");
+      const readFile = fs.readFileSync(`markdown/data/${fileName}`, "utf-8");
       const { data: frontmatter } = matter(readFile);
       return {
         slug,
