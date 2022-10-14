@@ -14,11 +14,7 @@
   z-index: 1000;
 
   @include sm {
-    // grid-template-columns: repeat(1, 1fr);
-    // padding-left: 2rem;
-    // padding-right: 2rem;
     @include trans-100ms;
-
     height: auto;
     padding: 2rem 0;
     @include flex(column);

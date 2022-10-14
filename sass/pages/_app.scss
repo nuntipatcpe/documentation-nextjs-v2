@@ -6,6 +6,7 @@
   }
   .card {
     margin-bottom: 3rem;
+
     &_title {
       color: $primary-1;
       border-bottom: 1px solid rgba($color: $primary-1, $alpha: 0.3);
@@ -23,7 +24,13 @@
         padding-left: 2rem;
         padding-right: 2rem;
       }
-
+      @include sm {
+        letter-spacing: normal;
+        padding: 0;
+      }
+      @include xs {
+        font-size: 0.9rem;
+      }
       letter-spacing: 2px;
       font-weight: 400;
       &_content {
@@ -34,9 +41,7 @@
         height: 60px;
         display: flex;
         justify-content: space-between;
-
         box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.5);
-
         &_link {
           display: flex;
           align-items: center;
