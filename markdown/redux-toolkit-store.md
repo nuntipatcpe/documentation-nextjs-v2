@@ -1,3 +1,8 @@
+---
+title: "Redux"
+popular: 0
+name: "Store "
+---
 
 ## store
 
@@ -25,17 +30,17 @@
 
   **DevTools** redux-logger Mode dev
 
-    ```
-    export const store = configureStore({
-      reducer,
-    devTools
-    });
-    ```
+  ```
+  export const store = configureStore({
+    reducer,
+  devTools
+  });
+  ```
 
-    Create type useDispatch
+  Create type useDispatch
 
-    ```
-    export type RootState = ReturnType<typeof store.getState>;
-    export type AppDispatch = typeof store.dispatch;
-    export const useAppDispatch = () => useDispatch<AppDispatch>();
-    ```
+  ```
+  export type RootState = ReturnType<typeof store.getState>;
+  export type AppDispatch = typeof store.dispatch;
+  export const useAppDispatch = () => useDispatch<AppDispatch>();
+  ```

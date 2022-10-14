@@ -1,4 +1,10 @@
-# VS Code setting
+---
+title: "VScode"
+popular: 0
+name: "VSCode setting"
+---
+
+# VSCode setting
 
 1. Open command palette
 2. Hotkey

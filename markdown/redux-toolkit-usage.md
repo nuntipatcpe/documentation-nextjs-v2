@@ -1,3 +1,9 @@
+---
+title: "Redux"
+popular: 0
+name: "Usage"
+---
+
 # usage
 
 - main.tsx
@@ -12,6 +18,7 @@
     <App />
   </Provider>
   ```
+
 - Component.tsx
 
   - getValueState
@@ -22,7 +29,8 @@
     setAsynchronousDemo,
     sliceSelector,
   } from "../../../store/slices/login.slice";
-  ``` 
+  ```
+
   ```
   let reducer = useSelector(sliceSelector);
   ```
@@ -36,8 +44,8 @@
   ```
   let dispatch = useAppDispatch();
   ```
+
   ```
   dispatch(demoAction("demoTest"));
   dispatch(setAsynchronousDemo(1));
   ```
-  

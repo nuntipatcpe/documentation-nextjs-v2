@@ -1,20 +1,31 @@
+---
+title: "Sass"
+popular: 0
+name: "Get started"
+---
+
 # Install
+
 - pnpm
 
 ```
 pnpm install sass
 ```
+
 - Dev Mode
 
 ```
 pnpm install -D sass
 ```
 
-#  Compile .sass and .scss files to .css
+# Compile .sass and .scss files to .css
+
 ```
 sass --watch src/scss:src/css
 ```
+
 # Sass Architecture Structure
+
 ```
 sass/
 |

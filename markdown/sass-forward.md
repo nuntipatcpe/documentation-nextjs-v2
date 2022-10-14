@@ -1,15 +1,23 @@
+---
+title: "Sass"
+popular: 0
+name: "Forward"
+---
+
 # Forward
 
-**@forward './path'** 
-- create **_index.scss**
+**@forward './path'**
+
+- create **\_index.scss**
 - export all file in folder **utils**
 
 - utils
-    - _font.scss
-    - _color.scss
-    - _shadow.scss
 
-- _index.scss
+  - \_font.scss
+  - \_color.scss
+  - \_shadow.scss
+
+- \_index.scss
 
 ```
 @forward './font';
@@ -23,9 +31,11 @@
 ```
 @use "../util/index.scss";
 ```
+
 ```
 @use "../util/index.scss" as ut;
 ```
+
 ```
 @use "../util/index.scss" as *;
 ```

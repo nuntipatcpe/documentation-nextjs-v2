@@ -1,3 +1,9 @@
+---
+title: "Redux"
+popular: 0
+name: "Slices"
+---
+
 ## Slices folder
 
 - Synchronous
@@ -104,7 +110,6 @@ export default sliceDemo.reducer;
 
 3. Type PayloadAction
 
-
 ```
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
@@ -161,6 +166,7 @@ import { RootState } from "../store";
   }
   );
   ```
+
 ---
 
 - Create Slice

@@ -1,15 +1,22 @@
-# Use 
+---
+title: "Sass"
+popular: 0
+name: "Use"
+---
 
-- **@use'./path';** 
+# Use
+
+- **@use'./path';**
 
 ## usage
 
-- _color.scss
+- \_color.scss
 
 ```
 $color-1:#ccc
 ```
-- _navBar.scss
+
+- \_navBar.scss
 
 ```
 @use './utils/color'
@@ -20,6 +27,7 @@ $color-1:#ccc
     background-color: color$.color-1;
 }
 ```
+
 or
 
 ```
@@ -31,6 +39,7 @@ or
     background-color: col$.color-1;
 }
 ```
+
 or
 
 ```
