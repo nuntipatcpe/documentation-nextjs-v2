@@ -8,6 +8,7 @@ import { searchSelector } from "@/store/slices/postSlice";
 
 import { redundancyArray, sortArray } from "@/utils/array.util";
 import { Posts } from "../models/post.model";
+import Image from "next/image";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("markdown");
@@ -84,7 +85,12 @@ const Home = ({ posts }: Posts) => {
                       return (
                         <div className="card_file_content" key={e2.slug}>
                           <span className="card_file_content_link">
-                            <img src="/icons/MD.svg" alt="MD" />
+                            <Image
+                              src="/icons/MD.svg"
+                              alt="MD"
+                              width={30}
+                              height={30}
+                            />
                             <Link href={`/markdown/${e2.slug}`}>
                               <a href="">{e2.frontmatter.name}</a>
                             </Link>
@@ -94,11 +100,21 @@ const Home = ({ posts }: Posts) => {
                             target={"blank"}
                             className="back"
                           >
-                            <img src="/icons/back.svg" alt="MD" />
+                            <Image
+                              src="/icons/back.svg"
+                              alt="MD"
+                              width={35}
+                              height={35}
+                            />
                           </a>
 
                           <span className="card_file_content_popular">
-                            <img src="/icons/GroupStars.svg" alt="" />
+                            <Image
+                              src="/icons/GroupStars.svg"
+                              alt=""
+                              width={20}
+                              height={20}
+                            />
                             <span>{e2.frontmatter.popular}</span>
                           </span>
                         </div>
