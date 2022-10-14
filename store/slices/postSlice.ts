@@ -1,13 +1,27 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { Posts } from "@/models/post.model";
+import { Action, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
 type initialStateType = {
   search: string;
   menubarTitle: Array<string>;
+  title: Posts;
 };
 const initialValues: initialStateType = {
   search: "",
   menubarTitle: [""],
+  title: {
+    posts: [
+      {
+        slug: "",
+        frontmatter: {
+          name: "",
+          popular: 0,
+          title: "",
+        },
+      },
+    ],
+  },
 };
 
 const searchSlice = createSlice({
@@ -21,7 +35,7 @@ const searchSlice = createSlice({
     setMenubarTital: (state: initialStateType, actions) => {
       state.menubarTitle = actions.payload;
     },
-    getTitle(state: initialStateType, actions) {},
+    getTitle(state: initialStateType, { payload }) {},
   },
 });
 

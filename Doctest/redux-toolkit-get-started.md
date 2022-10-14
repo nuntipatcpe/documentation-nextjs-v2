@@ -1,3 +1,9 @@
+---
+title: "Redux"
+popular: 0
+name: "Redux Toolkit TypeScript"
+---
+
 # Redux Toolkit **TypeScript**
 
 ## Get started
@@ -6,15 +12,14 @@ Clone [GitHub](https://github.com/nuntipatcpe/redux-toolkit-demo-vite.git)
 
 Auto import **cmd + .** TypeScript
 
-
 ```
 pnpm create vite my-react-app --template react-ts
 ```
 
 - Dependency
   - redux toolkit
-  - redux 
-  
+  - redux
+
 ```
 pnpm i @reduxjs/toolkit react-redux
 ```
