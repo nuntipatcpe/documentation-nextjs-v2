@@ -78,7 +78,6 @@ const Home = ({ posts }: Posts) => {
             return (
               <div key={e} className="card">
                 <h1 className="card_title">{e}</h1>
-
                 <div className="card_file">
                   {fileName?.map((e2) => {
                     if (e2.frontmatter.title === e) {
