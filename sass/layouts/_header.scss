@@ -7,6 +7,13 @@
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding: 0 2rem;
+  background-color: rgba($color: $primary-1, $alpha: 0.95);
+  color: $secondary-1;
+
+  position: fixed;
+  width: 100vw;
+
+  z-index: 1000;
 
   .logo {
     height: 100px;
@@ -14,11 +21,11 @@
     align-items: center;
     font-weight: bold;
     font-size: 1.5rem;
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 2rem;
     z-index: 1000;
-    color: black;
+    color: $secondary-1;
   }
 
   input {

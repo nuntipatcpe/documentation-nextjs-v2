@@ -19,9 +19,9 @@ export default function Header({}: Props) {
   return (
     <div className="header">
       <Link href={"/"}>
-        <a className="logo">Documentation v2</a>
+        <a className="logo">Documentation v.2</a>
       </Link>
-      <span></span>
+      {/* <span></span> */}
       <input
         type="text"
         placeholder="Serach"
