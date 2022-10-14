@@ -68,8 +68,6 @@ const Home = ({ posts }: PostsType) => {
   );
 
   const fileName = posts.filter((e) =>
-    // e.slug.toLowerCase().replace(" ", "-") ===
-    // search.toLowerCase().replace(" ", "-")
     e.slug
       .toLowerCase()
       .replace(" ", "-")
@@ -77,10 +75,8 @@ const Home = ({ posts }: PostsType) => {
   );
 
   useEffect(() => {
-    if (title) {
-      dispatch(setMenubarTital(title));
-    }
-  }, [dispatch]);
+    dispatch(setMenubarTital(title));
+  }, [dispatch, title]);
 
   return (
     <>
