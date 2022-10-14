@@ -20,23 +20,22 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }: any) {
   const fileName = fs.readFileSync(`markdown/${slug}.md`, "utf-8");
-  const { data: frontmatter, content } = matter(fileName);
+  const { content } = matter(fileName);
   return {
     props: {
-      frontmatter,
       content,
     },
   };
 }
 
-function MarkdownPage({ frontmatter, content }: any) {
+function MarkdownPage({ content }: any) {
   return (
     <div className="markdown">
       <div className="home">
         <Link href={"/"}>
           <a>
-            {"< "}
-            {frontmatter.title}
+            {"Documentation v2"}
+            {/* {frontmatter.title} */}
           </a>
         </Link>
       </div>

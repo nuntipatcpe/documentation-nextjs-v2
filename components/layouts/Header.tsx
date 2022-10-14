@@ -1,5 +1,6 @@
 import { search } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 type Props = {};
@@ -17,7 +18,10 @@ export default function Header({}: Props) {
 
   return (
     <div className="header">
-      <h2 className="logo">Documentation v2</h2>
+      <Link href={"/"}>
+        <a className="logo">Documentation v2</a>
+      </Link>
+      <span></span>
       <input
         type="text"
         placeholder="Serach"

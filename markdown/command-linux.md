@@ -1,6 +1,6 @@
 ---
 title: "Command Linux"
-popular: 0
+popular: -1
 name: "Command"
 ---
 

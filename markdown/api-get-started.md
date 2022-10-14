@@ -1,6 +1,6 @@
 ---
 title: "Axios"
-popular: 11
+popular: 8
 name: "Get started"
 ---
 

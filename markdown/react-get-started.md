@@ -1,6 +1,6 @@
 ---
 title: "React"
-popular: 12
+popular: 9
 name: "Get started"
 ---
 

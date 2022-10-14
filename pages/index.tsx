@@ -92,8 +92,9 @@ const Home = ({ posts }: Posts) => {
                           style={{
                             position: "relative",
                           }}
+                          key={e2.slug}
                         >
-                          <Link href={`/markdown/${e2.slug}`} key={e2.slug}>
+                          <Link href={`/markdown/${e2.slug}`}>
                             <a href="">{e2.frontmatter.name}</a>
                           </Link>
                           <span

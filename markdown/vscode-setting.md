@@ -1,6 +1,6 @@
 ---
 title: "VScode"
-popular: 0
+popular: 10
 name: "VSCode setting"
 ---
 
@@ -12,14 +12,16 @@ name: "VSCode setting"
    - Mac **Command+Shift+P**
 
 - Configuration in settings.json
-  <code language="javascript">
+
+  ```
   user settings (JSON)
-  </code>
+  ```
 
 ## Setting
 
 - emmet
-  <code language="javascript">
+
+  ```
   {
   "emmet.syntaxProfiles": {
   "javascript": "jsx"
@@ -29,28 +31,31 @@ name: "VSCode setting"
   },
   "emmet.triggerExpansionOnTab": true,
   }
-  </code>
+  ```
 
 - Bracket Pairs
-  <code language="javascript">
+
+  ```
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": "active",
-  </code>
+  ```
 
 - format on Save
-  <code language="javascript">
+
+  ```
   "editor.formatOnSave": true
-  </code>
+  ```
 
 - Compact Folders
-  <code language="javascript">
+
+  ```
   "explorer.compactFolders": false
-  </code>
+  ```
 
 ## Main
 
 - settings.json
-  <code language="javascript">
+  ```
   {
   "emmet.syntaxProfiles": {
   "javascript": "jsx"
@@ -100,4 +105,4 @@ name: "VSCode setting"
   "editor.formatOnSave": true,
   "explorer.compactFolders": false
   }
-  </code>
+  ```

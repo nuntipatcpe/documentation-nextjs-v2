@@ -1,6 +1,6 @@
 ---
 title: "Policy powershell"
-popular: 10
+popular: -1
 name: "Policy powershell"
 ---
 

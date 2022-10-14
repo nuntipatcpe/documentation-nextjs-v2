@@ -10,7 +10,7 @@ export default function Menubar({}: Props) {
 
   return (
     <div className="menubar">
-      <div className="img">
+      {/* <div className="img">
         <span className="logo">Logo</span>
       </div>
       <ul>
@@ -19,7 +19,7 @@ export default function Menubar({}: Props) {
             <a href="">{e}</a>
           </Link>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

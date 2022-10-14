@@ -1,6 +1,6 @@
 ---
 title: "NextJS"
-popular: 0
+popular: 7
 name: "Get Started"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Sass"
-popular: 0
+popular: 6
 name: "Get started"
 ---
 
