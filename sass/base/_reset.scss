@@ -8,6 +8,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: $secondary-1;
+  // background: #000;
+  @include xs {
+    background-color: #000;
+  }
 }
 a {
   text-decoration: none;

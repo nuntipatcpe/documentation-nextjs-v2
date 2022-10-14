@@ -15,9 +15,9 @@
 
 <span className="img_markdown">![Cardfile](/image/Cardfile.png)</span>
 
-1. star -> sort by popular
-2. Click label link to file markdown
-3. Click the triangle icon. link to file markdown in a new tab. -> target blank
+1. icon star -> sort by popular
+2. Click **label** link to file markdown
+3. Click the **triangle icon**. link to file markdown in a new tab. -> target blank
 
 <!-- <style>
 .img_markdown img{
