@@ -1,21 +1,81 @@
+@use "../utils/" as *;
 .app {
   margin-top: 100px;
   .card {
     margin-bottom: 3rem;
     &_title {
-      border-bottom: 1px solid #ccc;
+      color: $primary-1;
+      border-bottom: 1px solid rgba($color: $primary-1, $alpha: 0.3);
       padding-bottom: 1rem;
     }
     &_file {
       margin-top: 1rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      a {
-        border-right: 1px solid rgba($color: #000000, $alpha: 0.3);
-        width: 100%;
+
+      letter-spacing: 2px;
+      font-weight: 400;
+      &_content {
+        position: relative;
+        background-color: $primary-1;
+        margin: 2rem 0.5rem;
+        border-radius: 0px 5px 5px 5px;
+        height: 60px;
         display: flex;
-        justify-content: center;
-        padding: 0.5rem 0;
+        justify-content: space-between;
+
+        box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.5);
+
+        &_link {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 30px;
+            margin-left: 0.5rem;
+          }
+          a {
+            width: 100%;
+            @include flex;
+            padding: 0.5rem 0;
+            color: $secondary-1;
+            margin-left: 0.5rem;
+            &:hover {
+              @include trans-100ms;
+              transform: scale(1.03);
+            }
+          }
+        }
+        &_popular {
+          color: $secondary-1;
+          background-color: $primary-1;
+          box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.5);
+          position: absolute;
+          top: -30px;
+          padding: 0 0.5rem;
+          border-radius: 5px 5px 0px 0px;
+          @include flex;
+          height: 30px;
+          img {
+            margin-right: 5px;
+            width: 15px;
+          }
+          span {
+            font-size: 0.7rem;
+          }
+        }
+        .back {
+          width: 20px;
+          margin-right: 0.5rem;
+          @include flex;
+          img {
+            width: 23px;
+            &:hover {
+              @include trans-400ms;
+              transform: scale(1.3);
+            }
+          }
+        }
       }
     }
   }

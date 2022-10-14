@@ -1,6 +1,5 @@
 @use "../utils/" as *;
 .header {
-  // margin-left: $magin-munu;
   margin: 0 auto;
   height: 100px;
   display: grid;
@@ -9,9 +8,10 @@
   padding: 0 2rem;
   background-color: rgba($color: $primary-1, $alpha: 0.95);
   color: $secondary-1;
-
   position: fixed;
   width: 100vw;
+
+  box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.3);
 
   z-index: 1000;
 

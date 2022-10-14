@@ -82,24 +82,24 @@ const Home = ({ posts }: Posts) => {
                   {fileName?.map((e2) => {
                     if (e2.frontmatter.title === e) {
                       return (
-                        <div
-                          style={{
-                            position: "relative",
-                          }}
-                          key={e2.slug}
-                        >
-                          <Link href={`/markdown/${e2.slug}`}>
-                            <a href="">{e2.frontmatter.name}</a>
-                          </Link>
-                          <span
-                            style={{
-                              position: "absolute",
-                              bottom: 0,
-                              left: 5,
-                              fontSize: 10,
-                            }}
+                        <div className="card_file_content" key={e2.slug}>
+                          <span className="card_file_content_link">
+                            <img src="/icons/MD.svg" alt="MD" />
+                            <Link href={`/markdown/${e2.slug}`}>
+                              <a href="">{e2.frontmatter.name}</a>
+                            </Link>
+                          </span>
+                          <a
+                            href={`/markdown/${e2.slug}`}
+                            target={"blank"}
+                            className="back"
                           >
-                            {e2.frontmatter.popular}
+                            <img src="/icons/back.svg" alt="MD" />
+                          </a>
+
+                          <span className="card_file_content_popular">
+                            <img src="/icons/GroupStars.svg" alt="" />
+                            <span>{e2.frontmatter.popular}</span>
                           </span>
                         </div>
                       );
