@@ -107,9 +107,10 @@ name: "Get started"
   let value = import.meta.env.VITE_IS_PRODUCTION
   ```
 
-  - value development = **1** production = **2**
+- value development = **1** production = **2**
 
 - base URL
+
   ```
   import.meta.env.BASE_URL
   ```

@@ -5,23 +5,10 @@ import { RootState } from "../store";
 type initialStateType = {
   search: string;
   menubarTitle: Array<string>;
-  title: Posts;
 };
 const initialValues: initialStateType = {
   search: "",
   menubarTitle: [""],
-  title: {
-    posts: [
-      {
-        slug: "",
-        frontmatter: {
-          name: "",
-          popular: 0,
-          title: "",
-        },
-      },
-    ],
-  },
 };
 
 const searchSlice = createSlice({
@@ -32,13 +19,9 @@ const searchSlice = createSlice({
     search: (state: initialStateType, actions) => {
       state.search = actions.payload;
     },
-    setMenubarTital: (state: initialStateType, actions) => {
-      state.menubarTitle = actions.payload;
-    },
-    getTitle(state: initialStateType, { payload }) {},
   },
 });
 
-export const { search, setMenubarTital, getTitle } = searchSlice.actions;
+export const { search } = searchSlice.actions;
 export const searchSelector = (store: RootState) => store.postReducer;
 export default searchSlice.reducer;

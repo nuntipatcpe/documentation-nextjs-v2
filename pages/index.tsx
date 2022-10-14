@@ -1,11 +1,11 @@
 import Layout from "@/components/layouts";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import { useSelector } from "react-redux";
-import { searchSelector, setMenubarTital } from "@/store/slices/postSlice";
-import { useAppDispatch } from "@/store/store";
+import { searchSelector } from "@/store/slices/postSlice";
+
 import { redundancyArray, sortArray } from "@/utils/array.util";
 import { Posts } from "../models/post.model";
 
@@ -33,8 +33,6 @@ export async function getStaticProps() {
 
 const Home = ({ posts }: Posts) => {
   const { search } = useSelector(searchSelector);
-  const dispatch = useAppDispatch();
-
   const title = redundancyArray(
     posts
       .filter(
@@ -70,10 +68,6 @@ const Home = ({ posts }: Posts) => {
         .replace(" ", "")
         .includes(search.toLowerCase().replace(" ", "")) //check slug && search
   );
-
-  useEffect(() => {
-    dispatch(setMenubarTital(title));
-  }, [dispatch]);
 
   return (
     <>
