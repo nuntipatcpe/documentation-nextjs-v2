@@ -1,3 +1,9 @@
+---
+title: "Git"
+popular: 0
+name: "Check remode git"
+---
+
 # Check remode git
 
 - check remote

@@ -1,3 +1,9 @@
+---
+title: "Git"
+popular: 0
+name: "Commit message"
+---
+
 # Commit message
 
 - **feat** : New feature
@@ -16,4 +22,3 @@ Usage
 - git commit -m "feat : login"
 - git commit -m "fix : use react icons"
 - git commit -m "refactor : variable homepage"
-

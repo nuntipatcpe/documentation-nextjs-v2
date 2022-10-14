@@ -21,9 +21,10 @@ const searchSlice = createSlice({
     setMenubarTital: (state: initialStateType, actions) => {
       state.menubarTitle = actions.payload;
     },
+    getTitle(state: initialStateType, actions) {},
   },
 });
 
-export const { search, setMenubarTital } = searchSlice.actions;
+export const { search, setMenubarTital, getTitle } = searchSlice.actions;
 export const searchSelector = (store: RootState) => store.postReducer;
 export default searchSlice.reducer;

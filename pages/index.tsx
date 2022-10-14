@@ -6,43 +6,24 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { searchSelector, setMenubarTital } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
-
-interface PostsType {
-  posts: Array<{
-    slug: string;
-    frontmatter: {
-      title: string;
-      name: string;
-      popular: number;
-    };
-  }>;
-}
+import { redundancyArray, sortArray } from "@/utils/array.util";
+import { Posts } from "../models/post.model";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("markdown");
-  const posts = files.map((fileName) => {
-    const slug = fileName.replace(".md", "");
-    const readFile = fs.readFileSync(`markdown/${fileName}`, "utf-8");
-    const { data: frontmatter } = matter(readFile);
-    return {
-      slug,
-      frontmatter,
-    };
-  });
 
-  posts.sort((a, b) => {
-    let fb = a.frontmatter.popular,
-      fa = b.frontmatter.popular;
-
-    if (fa < fb) {
-      return -1;
-    }
-    if (fa > fb) {
-      return 1;
-    }
-    return 0;
-  });
-
+  //sort by popula
+  const posts = sortArray(
+    files.map((fileName) => {
+      const slug = fileName.replace(".md", "");
+      const readFile = fs.readFileSync(`markdown/${fileName}`, "utf-8");
+      const { data: frontmatter } = matter(readFile);
+      return {
+        slug,
+        frontmatter,
+      };
+    })
+  );
   return {
     props: {
       posts,
@@ -50,33 +31,36 @@ export async function getStaticProps() {
   };
 }
 
-const Home = ({ posts }: PostsType) => {
+const Home = ({ posts }: Posts) => {
   const { search } = useSelector(searchSelector);
   const dispatch = useAppDispatch();
 
-  const titleArray = posts
-    .filter((e) =>
-      e.slug
-        .toLowerCase()
-        .replace(" ", "-")
-        .includes(search.toLowerCase().replace(" ", "-"))
-    ) //search from search bar
-    .map((e) => e.frontmatter.title);
-
-  let title = titleArray.filter(
-    (e: string, index: number) => titleArray.indexOf(e) === index
+  let title = redundancyArray(
+    posts
+      .filter(
+        (e) =>
+          e.frontmatter.title
+            .toLowerCase()
+            .replace(" ", "")
+            .includes(search.toLowerCase().replace(" ", "")) || //check title && search
+          e.frontmatter.name
+            .toLowerCase()
+            .replace(" ", "")
+            .includes(search.toLowerCase().replace(" ", "")) //check name && search
+      )
+      .map((e) => e.frontmatter.title) //chooes title
   );
 
   const fileName = posts.filter((e) =>
-    e.slug
+    e.frontmatter.name
       .toLowerCase()
-      .replace(" ", "-")
-      .includes(search.toLowerCase().replace(" ", "-"))
+      .replace(" ", "")
+      .includes(search.toLowerCase().replace(" ", ""))
   );
 
   useEffect(() => {
     dispatch(setMenubarTital(title));
-  }, [dispatch, title]);
+  }, [dispatch]);
 
   return (
     <>

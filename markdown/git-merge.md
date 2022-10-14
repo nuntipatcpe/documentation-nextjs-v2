@@ -1,3 +1,9 @@
+---
+title: "Git"
+popular: 0
+name: "Merge"
+---
+
 # Merge
 
   <code language="javascript">

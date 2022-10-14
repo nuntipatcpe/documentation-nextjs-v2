@@ -1,5 +1,5 @@
 ---
-title: "Vite react"
+title: "Javascript"
 popular: 0
 name: "Comma number"
 ---

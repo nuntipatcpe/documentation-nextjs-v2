@@ -19,6 +19,8 @@
       "@/components/*": ["components/*"],
       "@/sass/*": ["sass/*"],
       "@/store/*": ["store/*"],
+      "@/utils/*": ["utils/*"],
+      "@/models/*": ["models/*"],
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

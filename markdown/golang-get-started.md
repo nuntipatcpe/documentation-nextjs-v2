@@ -1,3 +1,9 @@
+---
+title: "Golang"
+popular: 0
+name: "Get started"
+---
+
 # Get started
 
 Golang [Downloads](https://go.dev/dl/)

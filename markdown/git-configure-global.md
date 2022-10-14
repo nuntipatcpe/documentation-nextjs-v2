@@ -1,3 +1,9 @@
+---
+title: "Git"
+popular: 0
+name: "Configure your Git username/email"
+---
+
 # Configure your Git username/email
 
 <code language="javascript">
