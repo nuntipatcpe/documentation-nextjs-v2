@@ -17,41 +17,6 @@ name: "VSCode setting"
   user settings (JSON)
   ```
 
-## Setting
-
-- emmet
-
-  ```
-  {
-  "emmet.syntaxProfiles": {
-  "javascript": "jsx"
-  },
-  "emmet.includeLanguages": {
-  "javascript": "javascriptreact"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  }
-  ```
-
-- Bracket Pairs
-
-  ```
-  "editor.guides.bracketPairs": "active",
-  "editor.guides.bracketPairsHorizontal": "active",
-  ```
-
-- format on Save
-
-  ```
-  "editor.formatOnSave": true
-  ```
-
-- Compact Folders
-
-  ```
-  "explorer.compactFolders": false
-  ```
-
 ## Main
 
 - settings.json
@@ -105,4 +70,39 @@ name: "VSCode setting"
   "editor.formatOnSave": true,
   "explorer.compactFolders": false
   }
+  ```
+
+## Setting
+
+- emmet
+
+  ```
+  {
+  "emmet.syntaxProfiles": {
+  "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+  "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  }
+  ```
+
+- Bracket Pairs
+
+  ```
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  ```
+
+- format on Save
+
+  ```
+  "editor.formatOnSave": true
+  ```
+
+- Compact Folders
+
+  ```
+  "explorer.compactFolders": false
   ```
