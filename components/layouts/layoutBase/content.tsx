@@ -16,7 +16,7 @@ function Content({ open, setOpen, children }: Props) {
             setOpen();
           }}
         >
-          <Image src={"/icons/menu.svg"} width={30} height={30} />
+          <Image src={"/icons/menu.svg"} alt="*" width={30} height={30} />
         </i>
         <div className="content">{children}</div>
       </main>

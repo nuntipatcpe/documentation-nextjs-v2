@@ -13,9 +13,6 @@ type Props = {
 function Layout({ children, isSearch }: Props) {
   const [open, setOpen] = useState(true);
 
-  const hendleClose = () => {
-    setOpen(!open);
-  };
   const hendleOpen = () => {
     setOpen(!open);
   };
@@ -30,7 +27,9 @@ function Layout({ children, isSearch }: Props) {
         <Menu />
       </div>
 
-      <Content children={children} open={open} setOpen={hendleOpen} />
+      <Content open={open} setOpen={hendleOpen}>
+        {children}
+      </Content>
     </div>
   );
 }

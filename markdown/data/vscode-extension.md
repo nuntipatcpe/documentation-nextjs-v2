@@ -39,6 +39,7 @@ name: "Extension"
 - ES7+ React/Redux/React-Native snippets
 
 - html to JSX
+
   ```
   code --install-extension dsznajder.es7-react-js-snippets
   code --install-extension riazxrazor.html-to-jsx
@@ -48,6 +49,7 @@ name: "Extension"
 ## Sass
 
 - Live sass compiler
+
   ```
   code --install-extension glenn2223.live-sass
   ```
