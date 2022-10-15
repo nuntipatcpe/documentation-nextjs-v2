@@ -7,13 +7,13 @@ type Props = {
 
 function LayoutMarkdown({ children }: Props) {
   return (
-    <div className="markdown">
+    <div className="layoutMarkdown">
       <div className="home">
         <Link href={"/"}>
           <a>Documentation v.2</a>
         </Link>
       </div>
-      <div className="content ">{children}</div>
+      <div className="content">{children}</div>
     </div>
   );
 }

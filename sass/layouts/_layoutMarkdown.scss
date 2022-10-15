@@ -1,0 +1,29 @@
+@use "../utils/" as *;
+.layoutMarkdown {
+  padding: 0 2rem;
+  margin-bottom: 5rem;
+  font-weight: 500;
+  .home {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: rgba($color: $primary-1, $alpha: 0.95);
+    a {
+      margin-left: 2rem;
+      color: $secondary-1;
+      text-decoration: none;
+    }
+  }
+  .content {
+    margin-top: 100px;
+  }
+}

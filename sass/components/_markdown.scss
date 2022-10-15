@@ -1,27 +1,20 @@
 @use "../utils/" as *;
 .markdown {
-  padding: 0 2rem;
-  margin-bottom: 5rem;
-  font-weight: 500;
-  .home {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    width: 100vw;
-    z-index: 1000;
-
-    background-color: rgba($color: $primary-1, $alpha: 0.95);
-    a {
-      margin-left: 2rem;
-      color: $secondary-1;
-      text-decoration: none;
-    }
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 2rem;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 3rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba($color: rgb(95, 95, 95), $alpha: 0.5);
+  }
+  span {
+    letter-spacing: 0.5px;
   }
 
   ol {
@@ -36,25 +29,6 @@
   a {
     color: blueviolet;
     text-decoration: underline;
-  }
-  .content {
-    margin: 0 auto;
-    margin-top: 100px;
-    max-width: 1000px;
-    width: 100%;
-    padding: 2rem;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      margin: 3rem 0;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid rgba($color: rgb(95, 95, 95), $alpha: 0.5);
-    }
-    span {
-      letter-spacing: 0.5px;
-    }
   }
   strong {
     color: $primary-2;

@@ -29,11 +29,19 @@ export default function Header({ open }: Props) {
         onChange={(e) => setSearchTerm(e.target.value)}
         value={searchTerm}
       />
-      <Link href={"/howToUse"}>
-        <a href="" className="howToUse">
-          How to create file Markdown ?
-        </a>
-      </Link>
+      <div>
+        <Link href={"/howToUse"}>
+          <a href="" className="howToUse">
+            How to create file Markdown ?
+          </a>
+        </Link>
+        <br />
+        <Link href={"/preview"}>
+          <a href="" className="howToUse">
+            preview
+          </a>
+        </Link>
+      </div>
     </div>
   );
 }

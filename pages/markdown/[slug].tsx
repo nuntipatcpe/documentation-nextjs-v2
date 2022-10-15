@@ -32,17 +32,19 @@ export async function getStaticProps({ params: { slug } }: any) {
 function MarkdownPage({ content }: any) {
   return (
     <LayoutMarkdown>
-      <Markdown
-        options={{
-          overrides: {
-            code: {
-              component: Code,
+      <div className="markdown">
+        <Markdown
+          options={{
+            overrides: {
+              code: {
+                component: Code,
+              },
             },
-          },
-        }}
-      >
-        {content}
-      </Markdown>
+          }}
+        >
+          {content}
+        </Markdown>
+      </div>
     </LayoutMarkdown>
   );
 }

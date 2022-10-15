@@ -16,7 +16,6 @@ function Layout({ children }: Props) {
         <i onClick={() => setOpen(!open)}>
           <Image src={"/icons/menu.svg"} width={30} height={30} />
         </i>
-
         {children}
       </main>
     </div>
