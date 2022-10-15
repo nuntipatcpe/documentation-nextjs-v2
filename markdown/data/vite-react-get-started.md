@@ -11,5 +11,5 @@ name: "Get started"
 - Typescript
 
   ```
-  pnpm create vite my-react-app --template react-ts
+  pnpm create vite my-react-app --template react-ts;
   ```

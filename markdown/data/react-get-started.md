@@ -4,18 +4,18 @@ popular: 9
 name: "Get started"
 ---
 
-# Install
+# Get started
 
 - Nodejs [install](https://nodejs.org/en/)
 
----
+- Typescript
 
----
+  ```
+  pnpm create react-app my-app --template typescript
+  ```
 
-- **React**
+- Javascript
 
-With PNPM
-
-```
-pnpm create react-app my-app
-```
+  ```
+  pnpm create react-app my-app
+  ```
