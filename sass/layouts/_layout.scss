@@ -1,13 +1,44 @@
 @use "../utils/" as *;
 .layout {
   main {
-    // @include sm {
-    //   margin-top: 2rem;
-    // }
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    // margin-left: $magin-munu;
     padding: 2rem;
+    .app {
+      @include sm {
+        margin-top: 250px;
+      }
+    }
+    position: relative;
+
+    i {
+      display: none;
+    }
+
+    @include sm {
+      @include trans-400ms();
+      i {
+        display: block;
+        right: 0rem;
+        top: 230px;
+        position: fixed;
+        z-index: 1000;
+      }
+    }
+  }
+  .active {
+    .app {
+      @include sm {
+        @include trans-400ms();
+        margin-top: 0px;
+      }
+    }
+    @include sm {
+      i {
+        @include trans-400ms();
+        top: 0rem;
+      }
+    }
   }
 }

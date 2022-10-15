@@ -13,7 +13,7 @@ function LayoutMarkdown({ children }: Props) {
           <a>Documentation v.2</a>
         </Link>
       </div>
-      <div className="content">{children}</div>
+      <div className="content ">{children}</div>
     </div>
   );
 }
