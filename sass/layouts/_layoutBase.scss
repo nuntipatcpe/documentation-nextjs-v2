@@ -1,0 +1,127 @@
+@use "../utils/" as *;
+.layoutMarkdown {
+  padding: 0 2rem;
+  margin-bottom: 5rem;
+  font-weight: 500;
+
+  .home {
+    position: fixed;
+    height: 100px;
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: rgba($color: $primary-1, $alpha: 0.95);
+    a {
+      margin-left: 2rem;
+      color: $secondary-1;
+      text-decoration: none;
+    }
+    .logo {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      top: 0;
+      left: 2rem;
+      z-index: 1000;
+      color: $secondary-1;
+      @include sm {
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    input {
+      margin: 0 auto;
+      width: 30%;
+      min-width: 180px;
+      height: 35px;
+      padding-left: 10px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      @include trans-400ms(width);
+      &:hover,
+      &:focus {
+        @include trans-200ms(width);
+        width: 70%;
+      }
+
+      @include sm {
+        margin: 1rem;
+      }
+    }
+
+    @include sm {
+      .open {
+        transform: translateY(-100%);
+      }
+    }
+    @include sm {
+      @include trans-100ms;
+      height: auto;
+      padding: 2rem 0;
+      @include flex(column);
+    }
+  }
+  .content {
+    margin-top: 100px;
+  }
+
+  main {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+
+    i {
+      display: none;
+    }
+
+    @include sm {
+      .app {
+        margin-top: 230px;
+      }
+    }
+
+    @include sm {
+      @include trans-400ms();
+      i {
+        display: block;
+        right: 0rem;
+        top: 230px;
+        position: fixed;
+        z-index: 1000;
+      }
+    }
+  }
+
+  .active {
+    .app {
+      @include sm {
+        @include trans-400ms();
+        margin-top: 0px;
+      }
+    }
+    @include sm {
+      i {
+        @include trans-400ms();
+        top: 0rem;
+      }
+    }
+  }
+}

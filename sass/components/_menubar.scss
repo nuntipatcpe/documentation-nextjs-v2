@@ -1,0 +1,14 @@
+@use "../utils/" as *;
+.menu {
+  a {
+    color: $secondary-1;
+    font-size: 1rem;
+    &:hover {
+      transform: scale(2);
+      color: $secondary-2;
+    }
+    @include sm {
+      margin: 1rem;
+    }
+  }
+}

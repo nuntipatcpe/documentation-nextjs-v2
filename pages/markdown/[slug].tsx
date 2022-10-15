@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
-import LayoutMarkdown from "@/components/layouts/layoutlayoutHeaderMarkdown";
+import Layout from "@/components/layouts/layoutBase";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("markdown/data");
@@ -31,7 +31,7 @@ export async function getStaticProps({ params: { slug } }: any) {
 
 function MarkdownPage({ content }: any) {
   return (
-    <LayoutMarkdown>
+    <Layout>
       <div className="markdown">
         <Markdown
           options={{
@@ -45,7 +45,7 @@ function MarkdownPage({ content }: any) {
           {content}
         </Markdown>
       </div>
-    </LayoutMarkdown>
+    </Layout>
   );
 }
 

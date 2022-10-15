@@ -1,6 +1,6 @@
 import Code from "@/components/Code";
-import LayoutMarkdown from "@/components/layouts/layoutlayoutHeaderMarkdown";
 import Markdown from "markdown-to-jsx";
+import Link from "next/link";
 import React, { useState } from "react";
 
 type Props = {};
@@ -8,17 +8,26 @@ type Props = {};
 export default function Preview({}: Props) {
   const [text, setText] = useState("");
   return (
-    <LayoutMarkdown>
+    <div>
       <div className="preview">
-        <h1>Write here</h1>
-        <h1>Preview</h1>
+        <div className="preview_box1">
+          <Link href={"/"}>
+            <a>Home</a>
+          </Link>
+          <h3>Write here</h3>
+          <span />
+        </div>
+        <div className="preview_box2">
+          <span />
+          <h3>Preview</h3>
+          <span />
+        </div>
         <textarea
           className="preview_area"
           onChange={(e) => setText(e.target.value)}
         >
           asdas
         </textarea>
-
         <div className="markdown">
           <Markdown
             options={{
@@ -33,6 +42,6 @@ export default function Preview({}: Props) {
           </Markdown>
         </div>
       </div>
-    </LayoutMarkdown>
+    </div>
   );
 }

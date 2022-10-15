@@ -1,9 +1,6 @@
 @import "./base/reset";
 
-@import "./layouts/menubar";
-@import "./layouts/header";
-@import "./layouts/layout";
-@import "./layouts/layoutMarkdown";
+@import "./layouts/layoutBase";
 
 @import "./pages/app";
 @import "./pages/preview";
@@ -11,3 +8,4 @@
 @import "./components/markdown";
 @import "./components/code";
 @import "./components/search";
+@import "./components/menubar";
