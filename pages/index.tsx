@@ -72,7 +72,7 @@ const Home = ({ posts }: Posts) => {
 
   return (
     <>
-      <Layout>
+      <Layout isSearch>
         <div className="app">
           {title?.map((e) => {
             return (

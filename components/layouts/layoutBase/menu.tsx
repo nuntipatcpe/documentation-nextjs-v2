@@ -10,9 +10,9 @@ export default function Menu({}: Props) {
         <a href="">How to create file Markdown ?</a>
       </Link>
       <br />
-      <Link href={"/preview"}>
+      {/* <Link href={"/preview"}>
         <a href="">preview</a>
-      </Link>
+      </Link> */}
     </div>
   );
 }

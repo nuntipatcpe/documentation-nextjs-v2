@@ -1,5 +1,5 @@
 @use "../utils/" as *;
-.layoutMarkdown {
+.layoutBase {
   padding: 0 2rem;
   margin-bottom: 5rem;
   font-weight: 500;
@@ -66,11 +66,6 @@
     }
 
     @include sm {
-      .open {
-        transform: translateY(-100%);
-      }
-    }
-    @include sm {
       @include trans-100ms;
       height: auto;
       padding: 2rem 0;
@@ -79,49 +74,5 @@
   }
   .content {
     margin-top: 100px;
-  }
-
-  main {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-    position: relative;
-
-    i {
-      display: none;
-    }
-
-    @include sm {
-      .app {
-        margin-top: 230px;
-      }
-    }
-
-    @include sm {
-      @include trans-400ms();
-      i {
-        display: block;
-        right: 0rem;
-        top: 230px;
-        position: fixed;
-        z-index: 1000;
-      }
-    }
-  }
-
-  .active {
-    .app {
-      @include sm {
-        @include trans-400ms();
-        margin-top: 0px;
-      }
-    }
-    @include sm {
-      i {
-        @include trans-400ms();
-        top: 0rem;
-      }
-    }
   }
 }

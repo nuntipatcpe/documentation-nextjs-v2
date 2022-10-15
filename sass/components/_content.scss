@@ -1,0 +1,52 @@
+@use "../utils/index.scss" as *;
+main {
+  max-width: 1400px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  position: relative;
+
+  i {
+    display: none;
+  }
+
+  @include sm {
+    .app {
+      margin-top: 230px !important;
+    }
+  }
+
+  @include sm {
+    @include trans-400ms();
+    i {
+      display: block;
+      right: 0rem;
+      top: 230px !important;
+      position: fixed;
+      z-index: 1000;
+    }
+  }
+}
+@include sm {
+  .open {
+    transform: translateY(-100%);
+  }
+}
+
+.active {
+  .app {
+    @include sm {
+      @include trans-400ms();
+      margin-top: 0px !important;
+    }
+  }
+  @include sm {
+    i {
+      @include trans-400ms();
+      top: 0rem !important;
+    }
+  }
+  .content {
+    margin-top: 0;
+  }
+}

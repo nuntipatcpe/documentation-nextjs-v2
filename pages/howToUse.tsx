@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
-import LayoutMarkdown from "@/components/layouts/layoutBase";
+import LayoutBase from "@/components/layouts/layoutBase";
 
 type Props = { content: string };
 
@@ -19,7 +19,7 @@ export async function getStaticProps() {
 
 function howToUse({ content }: Props) {
   return (
-    <LayoutMarkdown>
+    <LayoutBase>
       <div className="markdown">
         <Markdown
           options={{
@@ -33,7 +33,7 @@ function howToUse({ content }: Props) {
           {content}
         </Markdown>
       </div>
-    </LayoutMarkdown>
+    </LayoutBase>
   );
 }
 
