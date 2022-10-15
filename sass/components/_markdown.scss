@@ -67,8 +67,9 @@
     align-items: center;
     img {
       box-shadow: 0px 0px 10px 1px #ccc;
+      max-width: 500px;
+      width: 100%;
       @include md {
-        min-width: 300px;
         object-fit: contain;
       }
     }
