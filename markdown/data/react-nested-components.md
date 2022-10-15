@@ -7,8 +7,9 @@ name: "Nested components"
 # Nested components
 
 ```
-const Title = () => <h1>Data Test Component</h1>
-const Item = () => {
+const TitleComponent = () => <h1>Data Test Component</h1>
+
+const ItemComponent = () => {
   return (
     <ul>
       <li>Component 1 <span>100</span></li>
@@ -21,12 +22,11 @@ const Item = () => {
 function App() {
   return (
     <div>
-      <Title />
-      <Item />
+      <TitleComponent />
+      <ItemComponent />
     </div>
   );
 }
 
 export default App;
-
 ```

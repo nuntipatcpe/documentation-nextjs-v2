@@ -16,8 +16,8 @@ import { useReducer } from "react";
 
 ```
 function App() {
-
   const [count,setcont] = useState(0)
+
   const reducer = (state,action) => {
     switch(action.type){
       case "ADD":
@@ -30,8 +30,8 @@ function App() {
   }
 
   const [result,dispatch] = useReducer(reducer,count)
-  return (
 
+  return (
     <div align ="center">
       <h1>{result}</h1>
        <button onClick={()=>dispatch({type:"ADD",payload:10})}>ADD</button>

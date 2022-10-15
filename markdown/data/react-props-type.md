@@ -6,9 +6,11 @@ name: "Props Type and Default"
 
 # Props Type and Default
 
-```
-npm i prop-types
-```
+- lib prop-types
+
+  ```
+  npm i prop-types
+  ```
 
 - ex_prop **Children component**
 

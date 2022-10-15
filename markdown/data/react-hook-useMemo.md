@@ -12,9 +12,9 @@ name: "useMemo"
 
 ```
 const memorizedRandom = React.useMemo(()=>{
-        return Math.random();
-    })
-    },[ ]);
+    return Math.random();
+})
+},[ ]);
 ```
 
 Usage

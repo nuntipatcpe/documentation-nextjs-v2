@@ -4,49 +4,52 @@ popular: 0
 name: "Context API"
 ---
 
-## Context API
+# Context API
 
-- Create context **StoreContext.js**
+- **Javascritp**
 
-```
-import { createContext } from "react";
+  - Create context **StoreContext.js**
 
-const StoreContext = createContext()
+    ```
+    import { createContext } from "react";
 
-export default StoreContext;
-```
+    const StoreContext = createContext()
 
-- Provider
+    export default StoreContext;
+    ```
 
-```
-import StoreContext from "pathfile StoreContext.js";
-```
+  - Provider
 
-```
-function App() {
+    ```
+    import StoreContext from "pathfile StoreContext.js";
+    ```
 
-return (
-    <StoreContext.Provider value={"value"}>
+    ```
+    function App() {
+
+    return (
+        <StoreContext.Provider value={"value"}>
+          <div>
+
+          </div>
+        </StoreContext.Provider>
+      );
+    }
+    export default App;
+    ```
+
+  - Consumer
+
+    ```
+    import StoreContext from "pathfile StoreContext.js";
+    ```
+
+    ```
+    <StoreContext.Consumer>
+    {(value) =>
       <div>
-
+          {value}
       </div>
-    </StoreContext.Provider>
-  );
-}
-export default App;
-```
-
-- Consumer
-
-```
-import StoreContext from "pathfile StoreContext.js";
-```
-
-```
-      <StoreContext.Consumer>{(value) =>
-        <div>
-            {value}
-        </div>
-        }
-      </StoreContext.Consumer>
-```
+    }
+    </StoreContext.Consumer>
+    ```

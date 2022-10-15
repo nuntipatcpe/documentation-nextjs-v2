@@ -6,115 +6,115 @@ name: "React Router DOM V6"
 
 # React Router DOM V6
 
-## install
+- install
 
-```
-npm install react-router-dom
-```
+  ```
+  pnpm install react-router-dom
+  ```
 
-## Configuring Routes
+- Configuring Routes
 
-```
-import { BrowserRouter
-        , Routes
-        , Route
-    } from "react-router-dom";
-```
+  ```
+  import { BrowserRouter
+          , Routes
+          , Route
+      } from "react-router-dom";
+  ```
 
-```
- <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="teams" element={<Teams />}>
-                <Route path=":teamId" element={<Team />} />
-                <Route path="new" element={<NewTeamForm />} />
-                <Route index element={<LeagueStandings />} />
-            </Route>
-        </Route>
-    </Routes>
+  ```
+  <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<App />}>
+              <Route index element={<Home />} />
+              <Route path="teams" element={<Teams />}>
+                  <Route path=":teamId" element={<Team />} />
+                  <Route path="new" element={<NewTeamForm />} />
+                  <Route index element={<LeagueStandings />} />
+              </Route>
+          </Route>
+      </Routes>
   </BrowserRouter>
-```
+  ```
+
+---
 
 - **Router**
 
-```
-<BrowserRouter>
-    <></>
-</BrowserRouter>
-```
+  ```
+  <BrowserRouter>
+      <></>
+  </BrowserRouter>
+  ```
 
 - **Routes**
 
-First page
+  First page
 
-```
-<Routes>
+  ```
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>
+  ```
+
+  or
+
+  ```
+  <Routes>
     <Route index element={<Home />} />
-</Routes>
-```
+  </Routes>
+  ```
 
-or
+  Path other
 
-```
-oute path="/" element={<Team />} />
-```
-
-Path other
-
-```
-<Routes>
-     <Route path="teams" element={<Teams />}>
+  ```
+  <Routes>
+      <Route path="teams" element={<Teams />}>
         <Route path=":teamId" element={<Team />} />
         <Route path="new" element={<NewTeamForm />} />
         <Route index element={<LeagueStandings />} />
-    </Route>
-</Routes>
-```
+      </Route>
+  </Routes>
+  ```
 
 ## Navigation
 
-**Link** tag
+- **Link** tag
 
-```
-import { Link } from "react-router-dom";
-```
+  ```
+  import { Link } from "react-router-dom";
+  ```
 
-```
-<Link to="/pathname"> </Link>
-```
+  ```
+  <Link to="/pathname"> </Link>
+  ```
 
-**useNavigate** to do it yoursel
+- **useNavigate** to do it yoursel
 
-```
-import { useNavigate } from "react-router-dom";
-```
+  ```
+  import { useNavigate } from "react-router-dom";
+  ```
 
-```
-function(e){
+  ```
+  function(){
     let navigate = useNavigate();
-    if(e){
-        navigate.(`/path`);
-    }
-}
-```
+    navigate.(`/path`);
+  }
+  ```
 
-```
-function(e){
+  ```
+  function(e){
     let navigate = useNavigate();
-    if(e){
-        navigate.(-1);
-    }
-}
-```
+    navigate.(-1);
+  }
+  ```
 
 ## Reading URL Parameters
 
 - Set Route **:id**
 
-```
-<Route path='/Products/:id' element={<Products/>} />
-```
+  ```
+  <Route path='/Products/:id' element={<Products/>} />
+  ```
 
 - useParams
 
@@ -145,14 +145,15 @@ function(e){
   ```
 
 - history
+
   ```
   history.back();
   ```
 
-## Not Found Routes
+- Not Found Routes
 
-set path =**" \* "**
+  set path =**" \* "**
 
-```
- <Route path="*" element={<NotFound />} />
-```
+  ```
+  <Route path="*" element={<NotFound />} />
+  ```

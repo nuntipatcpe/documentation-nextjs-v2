@@ -6,13 +6,12 @@ name: "useContext"
 
 # useContext
 
-Parent Component -----> Childent Component
+Parent Component --> Childent Component
 
 - TemeContext.js
 
   ```
   import React from 'react
-
   const ThemeContext = React.createContext(null);
   export default ThemeContext
   ```
@@ -24,9 +23,9 @@ Parent Component -----> Childent Component
   ```
 
   ```
-      <ThemeContext.Provider value="red">
-          <ChildentComponent>
-      </ThemeContext.Provider>
+  <ThemeContext.Provider value="red">
+      <ChildentComponent>
+  </ThemeContext.Provider>
   ```
 
 - Childent Component

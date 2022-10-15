@@ -1,7 +1,7 @@
 ---
 title: "React"
 popular: 0
-name: "Context API"
+name: "Custom hook"
 ---
 
 # Custom hook
@@ -17,14 +17,15 @@ name: "Context API"
 In put **data**
 
 ```
-const useCalulatePice=(data) =>{
-    let allPice = data.reduce((sum,currentValue)=>sum+(currentValue.pice*currentValue.quality),0);
-    let tax = ((7/100)*allPice);
-    let sum = allPice-tax;
-
-    return {allPice,tax,sum};
-}
-
+const useCalulatePice = (data) => {
+    let allPice = data.reduce(
+        (sum, currentValue) => sum + currentValue.pice * currentValue.quality,
+        0
+    );
+    let tax = (7 / 100) * allPice;
+    let sum = allPice - tax;
+    return { allPice, tax, sum };
+};
 export default useCalulatePice
 ```
 
@@ -37,5 +38,5 @@ import useCalulatePice from "../../hooks/useCalulatePice";
 ```
 
 ```
-const {allPice,tax,sum}  = useCalulatePice(data);
+const { allPice,tax,sum }  = useCalulatePice(data);
 ```
