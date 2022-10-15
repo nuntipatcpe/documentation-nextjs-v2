@@ -7,7 +7,7 @@ type Props = {
 };
 
 function Layout({ children }: Props) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div className="layout">

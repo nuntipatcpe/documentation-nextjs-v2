@@ -67,7 +67,8 @@
     }
   }
 }
-
-.open {
-  transform: translateY(-100%);
+@include sm {
+  .open {
+    transform: translateY(-100%);
+  }
 }
