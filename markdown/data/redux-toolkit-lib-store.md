@@ -1,5 +1,5 @@
 ---
-title: "Redux"
+title: "Redux lib"
 popular: 0
 name: "Store "
 ---
@@ -11,15 +11,15 @@ name: "Store "
   ```
   import { configureStore } from "@reduxjs/toolkit";
   import { useDispatch } from "react-redux";
-
-  import sliceReducer from "./slices/sliceDemo.slice";
+  import userReducer from "@/store/slices/userSlice";
 
   const reducer = {
-    sliceReducer
+  users: userReducer,
   };
 
   export const store = configureStore({
-    reducer,
+  reducer,
+  devTools: process.env.NODE_ENV === "development",
   });
 
   export type RootState = ReturnType<typeof store.getState>;

@@ -1,5 +1,5 @@
 ---
-title: "Axios Lib"
+title: "Axios lib"
 popular: 1
 name: "Get started"
 ---

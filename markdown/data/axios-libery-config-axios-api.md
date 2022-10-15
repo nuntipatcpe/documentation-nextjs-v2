@@ -1,5 +1,5 @@
 ---
-title: "Axios Lib"
+title: "Axios lib"
 popular: 0
 name: "Config axios API"
 ---

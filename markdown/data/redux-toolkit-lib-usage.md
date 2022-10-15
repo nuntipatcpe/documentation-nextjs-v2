@@ -1,12 +1,12 @@
 ---
-title: "Redux"
+title: "Redux lib"
 popular: 0
 name: "Usage"
 ---
 
 # usage
 
-- main.tsx
+- **main.tsx** sent store to component by provider
 
   ```
   import { store } from "./store/store";
@@ -19,9 +19,9 @@ name: "Usage"
   </Provider>
   ```
 
-- Component.tsx
+- **Component.tsx**
 
-  - getValueState
+  - useSelector
 
   ```
   import {
@@ -39,7 +39,7 @@ name: "Usage"
   {reducer.valueTest}
   ```
 
-  - dispatch
+  - useAppDispatch
 
   ```
   let dispatch = useAppDispatch();

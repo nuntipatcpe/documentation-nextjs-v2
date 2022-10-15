@@ -1,5 +1,5 @@
 ---
-title: "Redux"
+title: "Redux lib"
 popular: 0
 name: "Redux Toolkit TypeScript"
 ---
@@ -10,19 +10,14 @@ name: "Redux Toolkit TypeScript"
 
 Clone [GitHub](https://github.com/nuntipatcpe/redux-toolkit-demo-vite.git)
 
-Auto import **cmd + .** TypeScript
-
-```
-pnpm create vite my-react-app --template react-ts
-```
-
 - Dependency
+
   - redux toolkit
   - redux
 
-```
-pnpm i @reduxjs/toolkit react-redux
-```
+  ```
+  pnpm i @reduxjs/toolkit react-redux
+  ```
 
 - Chome Extenion [install](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=th)
 
@@ -34,5 +29,3 @@ pnpm i @reduxjs/toolkit react-redux
 |       |-cartSlice.js
 |   |-store.js
 ```
-
----

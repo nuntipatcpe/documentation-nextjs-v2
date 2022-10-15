@@ -13,3 +13,5 @@ name: "Get started"
   ```
   pnpm create vite my-react-app --template react-ts;
   ```
+
+Auto import **cmd + .** TypeScript
