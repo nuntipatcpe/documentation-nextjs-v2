@@ -1,12 +1,8 @@
 ---
-title: "Axios"
+title: "API"
 popular: 8
 name: "Get started"
 ---
-
-# Free API
-
-- **User Authentication** [Me Call API](https://mecallapi.com/)
 
 # API
 

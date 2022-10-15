@@ -10,10 +10,11 @@
   h4,
   h5 {
     margin: 3rem 0;
-    padding-bottom: 1rem;
+    // padding-bottom: 0rem;
   }
   h1 {
     border-bottom: 1px solid rgba($color: rgb(95, 95, 95), $alpha: 0.5);
+    padding-bottom: 1rem;
   }
   span {
     letter-spacing: 0.5px;

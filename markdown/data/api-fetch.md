@@ -1,5 +1,5 @@
 ---
-title: "Axios"
+title: "API"
 popular: 0
 name: "Fetch"
 ---
