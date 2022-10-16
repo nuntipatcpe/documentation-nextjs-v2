@@ -7,38 +7,43 @@ name: "Branch"
 # Branch
 
 - Check branch
-  <code language="javascript">
+
+  ```
   git branch
-  </code>
+  ```
 
-- Change name branch
-  <code language="javascript">
+- **Change** name
+
+  ```
   git branch -M main
-  </code>
+  ```
 
-- Create branch
-  <code language="javascript">
+- **Create**
+
+  ```
   git branch -c new_branch
-  </code>
+  ```
 
-- Delete
-  <code language="javascript">
+- **Delete**
+
+  ```
   git branch -d newBranch
-  </code>
+  ```
 
-- Force delete
-  <code language="javascript">
+- **Force delete**
+
+  ```
   git branch -D newBranch
-  </code>
+  ```
 
-## Switch branch
+- **Switch**
 
-- switch and create new branch "-c"
-  <code language="javascript">
+  ```
+  git switch  <non_existing_branch>
+  ```
+
+- **Switch** and create new branch "-c"
+
+  ```
   git switch -c <non_existing_branch>
-  </code>
-
-- switch and create new branch "-c"
-  <code language="javascript">
-  git switch -c <non_existing_branch>
-  </code>
+  ```

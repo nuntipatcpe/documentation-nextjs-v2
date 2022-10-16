@@ -1,15 +1,17 @@
 ---
 title: "Git"
 popular: 0
-name: "Configure your Git username/email"
+name: "Configure global Git"
 ---
 
-# Configure your Git username/email
+# Configure global Git
 
-<code language="javascript">
-git config --global user.name "FIRST_NAME LAST_NAME"
-</code>
+- username/email
 
-<code language="javascript">
-git config --global user.email "MY_NAME@example.com"
-</code>
+  ```
+  git config --global user.name "FIRST_NAME LAST_NAME"
+  ```
+
+  ```
+  git config --global user.email "MY_NAME@example.com"
+  ```

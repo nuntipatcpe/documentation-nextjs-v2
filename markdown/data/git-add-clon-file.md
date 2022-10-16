@@ -1,16 +1,22 @@
 ---
 title: "Git"
 popular: 0
-name: "ADD File"
+name: "Get started"
 ---
 
-# ADD File
+# Get started
 
-- Install git and add to git staging area
+- Git [dowload](https://git-scm.com/downloads/)
+- Github [link](https://github.com/)
+
+- Add file
+
+- Install git and add to git **staging area**
 
   ```
   git init
   git add .
+  git commit -m "first commit"
   ```
 
 - check status
@@ -20,21 +26,21 @@ name: "ADD File"
   ```
 
 - Commit and change name main branch
+
   ```
-  git commit -m "first commit"
   git branch -M main
   ```
+
   ```
-  git remote add origin https:\/\/github.com/..
+  git remote add origin https://github.com/..
   ```
+
   ```
   git push -u origin main
   ```
 
----
+- Clone
 
-# Clone
-
-```
-git clone https://github.com/..
-```
+  ```
+  git clone https://github.com/..
+  ```

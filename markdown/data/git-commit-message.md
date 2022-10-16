@@ -1,6 +1,6 @@
 ---
 title: "Git"
-popular: 0
+popular: 1
 name: "Commit message"
 ---
 
