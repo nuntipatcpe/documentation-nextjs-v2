@@ -1,30 +1,8 @@
 ---
 title: "REST client lib Vscode extention"
 popular: 0
-name: "Get started"
+name: "POST"
 ---
-
-# Get started
-
-- install
-
-  ```
-  code --install-extension humao.rest-client;
-  ```
-
-- create fiel
-
-  - test.http
-
-# GET
-
-- sent token
-
-  ```
-  ### profile
-  GET [url] HTTP/1.1
-  Authorization: Bearer `token`
-  ```
 
 # POST
 

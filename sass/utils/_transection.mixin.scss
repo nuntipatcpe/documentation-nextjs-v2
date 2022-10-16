@@ -19,3 +19,9 @@
 @mixin trans-700ms($e: all) {
   transition: $e 700ms ease;
 }
+@mixin trans-800ms($e: all) {
+  transition: $e 800ms ease;
+}
+@mixin trans-900ms($e: all) {
+  transition: $e 900ms ease;
+}

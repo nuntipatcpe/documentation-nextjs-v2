@@ -6,36 +6,44 @@ name: "Mixin"
 
 # Mixin
 
-```
-@mixin nameMixin {
+- Default
 
-}
-```
+  ```
+  @mixin nameMixin {
 
-## Usage
+  }
+  ```
 
-```
-@mixin btn{
+- Usage
 
-}
-```
+  ```
+  @use "../utils/" as *;
+  ```
 
-```
-nav {
-  @include btn;
-}
-```
+  ```
+  nav {
+    @include nameMixin;
+  }
+  ```
 
-or
+- default parameter
 
-```
-@mixin btn( $x, $y : 10px, $y : 20px){
+  - mixin
 
-}
-```
+    ```
+    @mixin btn( $x, $y : 10px, $y : 20px){
 
-```
-nav {
-  @include btn(10px,0);
-}
-```
+    }
+    ```
+
+  - useage
+
+    ```
+    @use "../utils/" as *;
+    ```
+
+    ```
+    nav {
+      @include btn(10px,0);
+    }
+    ```

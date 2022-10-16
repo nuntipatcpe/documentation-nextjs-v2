@@ -6,6 +6,8 @@ name: "Media Queries"
 
 # Media Queries
 
+## Max-width
+
 - \_breakpoint.scss -> **Max-width**
 
   ```
@@ -49,6 +51,34 @@ name: "Media Queries"
     }
   }
   ```
+
+- Useage
+
+  1. xl
+  2. lg
+  3. md
+  4. sm
+  5. xs
+
+  ```
+  @include xl {
+    background-color: green;
+  }
+  @include lg {
+    background-color: salmon;
+  }
+  @include md {
+    background-color: yellow;
+  }
+  @include sm {
+    background-color: #ccc;
+  }
+  @include xs {
+    background-color: #000;
+  }
+  ```
+
+## min-width
 
 - \_breakpoint.scss -> **min-width**
 
@@ -95,22 +125,28 @@ name: "Media Queries"
 
   ```
 
-  Useage
+  - Useage
 
-  ```
-  @include xs {
-    background-color: #000;
-  }
-  @include sm {
-    background-color: #ccc;
-  }
-  @include md {
-    background-color: yellow;
-  }
-  @include lg {
-    background-color: salmon;
-  }
-  @include xl {
-    background-color: green;
-  }
-  ```
+    1. xs
+    2. sm
+    3. md
+    4. lg
+    5. xl
+
+    ```
+    @include xs {
+      background-color: #000;
+    }
+    @include sm {
+      background-color: #ccc;
+    }
+    @include md {
+      background-color: yellow;
+    }
+    @include lg {
+      background-color: salmon;
+    }
+    @include xl {
+      background-color: green;
+    }
+    ```

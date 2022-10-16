@@ -1,0 +1,52 @@
+---
+title: "Sass"
+popular: 0
+name: "Mixin utils"
+---
+
+- \_layout.mixin.scss
+
+  **Flex**
+
+  ```
+  @mixin flex($direction: "row") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+  }
+  ```
+
+- \_transection.mixin.scss
+
+  **trans-100ms - trans-900ms**
+
+  ```
+  @mixin trans-100ms($e: all) {
+  transition: $e 100ms ease;
+  }
+  @mixin trans-200ms($e: all) {
+  transition: $e 200ms ease;
+  }
+  @mixin trans-300ms($e: all) {
+  transition: $e 300ms ease;
+  }
+  @mixin trans-400ms($e: all) {
+  transition: $e 400ms ease;
+  }
+  @mixin trans-500ms($e: all) {
+  transition: $e 500ms ease;
+  }
+  @mixin trans-600ms($e: all) {
+  transition: $e 600ms ease;
+  }
+  @mixin trans-700ms($e: all) {
+  transition: $e 700ms ease;
+  }
+  @mixin trans-800ms($e: all) {
+  transition: $e 800ms ease;
+  }
+  @mixin trans-900ms($e: all) {
+  transition: $e 900ms ease;
+  }
+  ```

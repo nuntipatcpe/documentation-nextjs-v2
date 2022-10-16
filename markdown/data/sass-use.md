@@ -1,10 +1,10 @@
 ---
 title: "Sass"
 popular: 0
-name: "Use"
+name: "@Use"
 ---
 
-# Use
+# @Use
 
 - **@use'./path';**
 
@@ -12,42 +12,44 @@ name: "Use"
 
 - \_color.scss
 
-```
-$color-1:#ccc
-```
+  ```
+  $color-1:#ccc
+  ```
 
 - \_navBar.scss
 
-```
-@use './utils/color'
-```
+  - Default
 
-```
-.navBar{
-    background-color: color$.color-1;
-}
-```
+    ```
+    @use './utils/color'
+    ```
 
-or
+    ```
+    .navBar{
+        background-color: color$.color-1;
+    }
+    ```
 
-```
-@use './utils/color' as col
-```
+  - change name **as col**
 
-```
-.navBar{
-    background-color: col$.color-1;
-}
-```
+    ```
+    @use './utils/color' as col
+    ```
 
-or
+    ```
+    .navBar{
+        background-color: col$.color-1;
+    }
+    ```
 
-```
-@use './utils/color' as *
-```
+  - all **as**
 
-```
-.navBar{
-    background-color: $.color-1;
-}
-```
+    ```
+    @use './utils/color' as *
+    ```
+
+    ```
+    .navBar{
+        background-color: $.color-1;
+    }
+    ```

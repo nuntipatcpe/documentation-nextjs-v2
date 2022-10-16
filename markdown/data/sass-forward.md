@@ -19,23 +19,29 @@ name: "Forward"
 
 - \_index.scss
 
-```
-@forward './font';
-@forward './color';
-@forward './shadow';
-@forward './mixin';
-```
+  ```
+  @forward './font';
+  @forward './color';
+  @forward './shadow';
+  @forward './mixin';
+  ```
 
 ## usage
 
-```
-@use "../util/index.scss";
-```
+- $Color-1
 
-```
-@use "../util/index.scss" as ut;
-```
+  ```
+  @use "../util/index.scss" as *;
+  ```
 
-```
-@use "../util/index.scss" as *;
-```
+- **ut**$Color-1
+
+  ```
+  @use "../util/index.scss" as ut;
+  ```
+
+- **util**$Color-1
+
+  ```
+  @use "../util/index.scss";
+  ```

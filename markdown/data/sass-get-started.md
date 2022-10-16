@@ -4,68 +4,69 @@ popular: 6
 name: "Get started"
 ---
 
-# Install
+# Get started
 
-- pnpm
+- install
 
-```
-pnpm install sass
-```
+  ```
+  pnpm install sass
 
-- Dev Mode
+  ```
 
-```
-pnpm install -D sass
-```
+  - Dev Mode
 
-# Compile .sass and .scss files to .css
+    ```
+    pnpm install -D sass
+    ```
 
-```
-sass --watch src/scss:src/css
-```
+- Compile .sass and .scss files to .css
 
-# Sass Architecture Structure
+  ```
+  sass --watch src/scss:src/css
+  ```
 
-```
-sass/
-|
-|– base/
-|   |– _reset.scss       # Reset/normalize
-|   |– _typography.scss  # Typography rules
-|   ...                  # Etc…
-|
-|– components/
-|   |– _buttons.scss     # Buttons
-|   |– _carousel.scss    # Carousel
-|   |– _cover.scss       # Cover
-|   |– _dropdown.scss    # Dropdown
-|   ...                  # Etc…
-|
-|– layout/
-|   |– _navigation.scss  # Navigation
-|   |– _grid.scss        # Grid system
-|   |– _header.scss      # Header
-|   |– _footer.scss      # Footer
-|   |– _sidebar.scss     # Sidebar
-|   |– _forms.scss       # Forms
-|   ...                  # Etc…
-|
-|– pages/
-|   |– _home.scss        # Home specific styles
-|   |– _contact.scss     # Contact specific styles
-|   ...                  # Etc…
-|
-|– sass-utils/
-|   |– _variables.scss   # Sass Variables
-|   |– _functions.scss   # Sass Functions
-|   |– _mixins.scss      # Sass Mixins
-|   |– _helpers.scss     # Class & placeholders helpers
-|
-|– vendors/
-|   |– _bootstrap.scss   # Bootstrap
-|   |– _jquery-ui.scss   # jQuery UI
-|   ...                  # Etc…
-|
-|
-`– style.scss            # Primary Sass file
-```
+- Sass Architecture Structure
+
+  ```
+  sass/
+  |
+  |– base/
+  |   |– _reset.scss       # Reset/normalize
+  |   |– _typography.scss  # Typography rules
+  |   ...                  # Etc…
+  |
+  |– components/
+  |   |– _buttons.scss     # Buttons
+  |   |– _carousel.scss    # Carousel
+  |   |– _cover.scss       # Cover
+  |   |– _dropdown.scss    # Dropdown
+  |   ...                  # Etc…
+  |
+  |– layout/
+  |   |– _navigation.scss  # Navigation
+  |   |– _grid.scss        # Grid system
+  |   |– _header.scss      # Header
+  |   |– _footer.scss      # Footer
+  |   |– _sidebar.scss     # Sidebar
+  |   |– _forms.scss       # Forms
+  |   ...                  # Etc…
+  |
+  |– pages/
+  |   |– _home.scss        # Home specific styles
+  |   |– _contact.scss     # Contact specific styles
+  |   ...                  # Etc…
+  |
+  |– sass-utils/
+  |   |– _variables.scss   # Sass Variables
+  |   |– _functions.scss   # Sass Functions
+  |   |– _mixins.scss      # Sass Mixins
+  |   |– _helpers.scss     # Class & placeholders helpers
+  |
+  |– vendors/
+  |   |– _bootstrap.scss   # Bootstrap
+  |   |– _jquery-ui.scss   # jQuery UI
+  |   ...                  # Etc…
+  |
+  |
+  `– style.scss            # Primary Sass file
+  ```
