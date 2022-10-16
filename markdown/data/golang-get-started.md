@@ -1,57 +1,31 @@
 ---
 title: "Golang"
-popular: 0
+popular: 1
 name: "Get started"
 ---
 
 # Get started
 
-Golang [Downloads](https://go.dev/dl/)
-
-```
-go version
-```
-
-Go mod [libery](https://pkg.go.dev/std)
-
-```
-go mod init name
-```
-
----
-
-## Run and build
-
-run
-
-```
-go run .\index.go
-```
-
-execution file
-
-```
-go build ./file
-```
-
----
-
-## Automatically restarting
-
-- window
-
-  node mon
+- Golang [Downloads](https://go.dev/dl/)
 
   ```
-  npm i -g nodemon
+  go version
   ```
 
-  ```
-  nodemon --exec go run .\index.go
-  ```
-
-- mac
+- Go mod [libery](https://pkg.go.dev/std)
 
   ```
-  npx go-mon name.go
+  go mod init name
+  ```
+
+- Run
+
+  ```
+  go run .\index.go
+  ```
+
+- Build **execution file**
+
+  ```
+  go build ./file
   ```
