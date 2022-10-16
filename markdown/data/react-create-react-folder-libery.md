@@ -1,6 +1,6 @@
 ---
 title: "React"
-popular: 9.5
+popular: 0
 name: "Create react folder lib"
 ---
 
