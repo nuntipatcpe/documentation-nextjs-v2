@@ -4,6 +4,8 @@ popular: 0
 name: "Syntax highlighter lib"
 ---
 
+# Syntax highlighter lib
+
 - Install [documentation](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 
   ```
