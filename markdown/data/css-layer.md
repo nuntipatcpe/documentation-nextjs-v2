@@ -6,6 +6,8 @@ name: "Layer"
 
 # Layer
 
-```
-z-index:0
-```
+- z-index
+
+  ```
+  z-index:0
+  ```

@@ -1,21 +1,35 @@
 ---
 title: "Css"
 popular: 0
-name: "Responsive Web Design"
+name: "Media query"
 ---
 
-# Responsive Web Design
+# Media query
 
-## Media Query
+- header
 
-  <code language="css">
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </code>
+  ```
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ```
 
-  <code language="css">
+- Media Query
+
+  max-width
+
+  ```
   @media screen and (max-width: 400px) {
     body {
       background-color: lightgreen;
     }
   }
-  </code>
+  ```
+
+  min-width
+
+  ```
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  ```

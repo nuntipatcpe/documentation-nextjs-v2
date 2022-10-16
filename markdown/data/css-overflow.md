@@ -6,18 +6,26 @@ name: "Overflow"
 
 # Overflow
 
-```
-overflow: hidden;
-```
+- hidden
 
-```
-overflow: scroll;
-```
+  ```
+  overflow: hidden;
+  ```
 
-```
-overflow-y: scroll;
-```
+- scroll
 
-```
-overflow-x: scroll;
-```
+  ```
+  overflow: scroll;
+  ```
+
+- scroll y
+
+  ```
+  overflow-y: scroll;
+  ```
+
+- scroll x
+
+  ```
+  overflow-x: scroll;
+  ```

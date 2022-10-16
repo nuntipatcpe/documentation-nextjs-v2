@@ -21,7 +21,7 @@ function Layout({ children, isSearch }: Props) {
     <div className="layoutBase">
       <div className={`home ${open && "open"}`}>
         <Link href={"/"}>
-          <a className="logo">Documentation v.2</a>
+          <a className="logo lora">Documentation v.2</a>
         </Link>
         {isSearch ? <Search /> : <span />}
         <Menu />

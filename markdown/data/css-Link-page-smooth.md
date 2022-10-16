@@ -1,14 +1,17 @@
 ---
 title: "Css"
 popular: 0
-name: "Link in page"
+name: "Scroll Smooth"
 ---
 
 # Link in page
 
-  <code language="css">
-    &lt;a href="#id">&lt;/a></code>
-  <code language="css">
-    html{
-        scroll-behavior: smooth;
-    }</code>
+```
+  <a href="#id"></a>
+```
+
+```
+html{
+    scroll-behavior: smooth;
+}
+```

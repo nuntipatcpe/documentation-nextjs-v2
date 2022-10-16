@@ -8,24 +8,24 @@ name: "Text Decoration"
 
 - none
 
-```
-text-decoration: none;
-```
+  ```
+  text-decoration: none;
+  ```
 
 - underline
 
-```
-text-decoration: underline;
-```
+  ```
+  text-decoration: underline;
+  ```
 
 - overline
 
-```
-text-decoration: overline;
-```
+  ```
+  text-decoration: overline;
+  ```
 
 - line-through
 
-```
-text-decoration: line-through;
-```
+  ```
+  text-decoration: line-through;
+  ```

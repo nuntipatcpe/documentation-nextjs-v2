@@ -6,14 +6,14 @@ name: "Cursor Stype"
 
 # Cursor Stype
 
-```
-img:hover{
-    cursor: help;
-}
-```
+- help
 
-```
-img:hover{
-    cursor: pointer;
-}
-```
+  ```
+  cursor: help
+  ```
+
+- pointer
+
+  ```
+  cursor: pointer;
+  ```

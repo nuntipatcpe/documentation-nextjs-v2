@@ -8,24 +8,24 @@ name: "Text Align"
 
 - Center
 
-```
-text-align: center;
-```
+  ```
+  text-align: center;
+  ```
 
 - Justify
 
-```
-text-align: justify;
-```
+  ```
+  text-align: justify;
+  ```
 
 - Right
 
-```
-text-align: right;
-```
+  ```
+  text-align: right;
+  ```
 
 - Left
 
-```
-text-align: left;
-```
+  ```
+  text-align: left;
+  ```

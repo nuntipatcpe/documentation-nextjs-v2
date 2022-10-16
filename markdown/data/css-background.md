@@ -6,50 +6,60 @@ name: "Background"
 
 # Background
 
-```
-background-image: url('pathfile')
-```
+- Image
 
-```
-background-repeat : no-repeat
-```
+  ```
+  background-image: url('pathfile')
+  ```
 
-```
-background-repeat : repeat-y
-```
+- Repeat
 
-```
-background-repeat : repeat-x
-```
+  ```
+  background-repeat : no-repeat
+  ```
 
-```
-background-attachment : fixed;
-```
+  ```
+  background-repeat : repeat-y
+  ```
 
-```
-background-attachment : scroll;
-```
+  ```
+  background-repeat : repeat-x
+  ```
 
-```
-background-position : left top;
-```
+- Attachment
 
-```
-background-position : left;
-```
+  ```
+  background-attachment : fixed;
+  ```
 
-```
-background-position : center;
-```
+  ```
+  background-attachment : scroll;
+  ```
 
-```
-background-size : cover;
-```
+- Position
 
-```
-background-size : contain;
-```
+  ```
+  background-position : left top;
+  ```
 
-```
-background-size : 10px;
-```
+  ```
+  background-position : left;
+  ```
+
+  ```
+  background-position : center;
+  ```
+
+- Size
+
+  ```
+  background-size : cover;
+  ```
+
+  ```
+  background-size : contain;
+  ```
+
+  ```
+  background-size : 10px;
+  ```

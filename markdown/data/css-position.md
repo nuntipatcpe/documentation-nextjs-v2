@@ -6,16 +6,32 @@ name: "Position"
 
 # Position
 
-- from root element
+- Static **default**
 
-```
-position: relative
-left: 50px
-```
+  ```
+  position: static
+  ```
 
-- from parent element
+- Relative **box parent**
 
-```
-position: relative
-left: 50px
-```
+  ```
+  position: relative
+  ```
+
+- Absolute **Position by box parent (relative)**top , bottom , left , rigth
+
+  ```
+  position: absolute
+  ```
+
+- Fixed **set width & heigth**
+
+  ```
+  position: fixed
+  ```
+
+- Sticky **set Position** top , bottom , left , rigth
+
+  ```
+  position: sticky
+  ```

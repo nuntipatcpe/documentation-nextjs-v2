@@ -6,53 +6,39 @@ name: "Border"
 
 # Border
 
-- border: (type border)(size)(color)
+- Border
 
-```
-border: solid 10px back
-```
+  ```
+  border: solid 10px back
+  ```
 
-```
-border: dotted 10px back
-```
+  ```
+  border: dotted 10px back
+  ```
 
-```
-border: solid 10px back
-border-radius: 5px
-```
+  ```
+  border: solid 10px back
+  border-radius: 5px
+  ```
 
-- Border-style :(type border)
+- Border style
 
-<code language="css">
-border-style : double
-</code>
+  ```
+  border-style : double
+  ```
 
-- Border-xxx-style :(type border)
+  ```
+  border-top-style : double
+  ```
 
-```
+  ```
+  border-left-style : double
+  ```
 
-border-top-style : double
+  ```
+  border-right-style : double
+  ```
 
-```
-
-```
-
-border-left-style : double
-
-```
-
-```
-
-border-right-style : double
-
-```
-
-```
-
-border-bottom-style : double
-
-```
-
-```
-
-```
+  ```
+  border-bottom-style : double
+  ```

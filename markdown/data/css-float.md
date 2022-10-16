@@ -6,22 +6,20 @@ name: "Float"
 
 # Float
 
-```
-float: left
-```
+- Left
 
-```
-float: right
-```
+  ```
+  float: left
+  ```
 
-# clear
+- Right
 
-```
-<div clr></div>
-```
+  ```
+  float: right
+  ```
 
-```
-.clr {
-    clear: both;
-}
-```
+- clear
+
+  ```
+  clear: both;
+  ```
