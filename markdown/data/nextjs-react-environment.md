@@ -1,6 +1,6 @@
 ---
 title: "NextJS"
-popular: 2
+popular: 0
 name: "environment"
 ---
 

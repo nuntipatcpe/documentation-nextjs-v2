@@ -1,6 +1,6 @@
 ---
 title: "NextJS"
-popular: 7
+popular: 0
 name: "Next config"
 ---
 

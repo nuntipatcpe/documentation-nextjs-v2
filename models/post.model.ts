@@ -10,5 +10,9 @@ export interface Posts {
     frontmatter: frontmatter;
   }>;
 }
+export interface test {
+  t1: [];
+  t2: () => void;
+}
 
 export interface postss {}
