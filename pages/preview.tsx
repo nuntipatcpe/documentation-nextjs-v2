@@ -25,9 +25,7 @@ export default function Preview({}: Props) {
         <textarea
           className="preview_area"
           onChange={(e) => setText(e.target.value)}
-        >
-          asdas
-        </textarea>
+        ></textarea>
         <div className="markdown">
           <Markdown
             options={{
