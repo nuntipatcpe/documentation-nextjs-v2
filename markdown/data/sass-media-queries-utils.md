@@ -1,12 +1,10 @@
 ---
 title: "Sass"
 popular: 0
-name: "Media Queries"
+name: "Media Queries utils"
 ---
 
 # Media Queries
-
-## Max-width
 
 - \_breakpoint.scss -> **Max-width**
 
@@ -77,8 +75,6 @@ name: "Media Queries"
     background-color: #000;
   }
   ```
-
-## min-width
 
 - \_breakpoint.scss -> **min-width**
 

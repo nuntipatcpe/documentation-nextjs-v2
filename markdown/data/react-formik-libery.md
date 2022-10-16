@@ -6,7 +6,7 @@ name: "Formik lib"
 
 # Get Staeted
 
-- [Documentation](https://formik.org/)
+- Install [Documentation](https://formik.org/)
 
   ```
   pnpm install formik --save

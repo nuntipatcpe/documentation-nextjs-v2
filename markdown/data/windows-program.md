@@ -6,15 +6,10 @@ name: "Program"
 
 # Program
 
-## Google
+- Google [Driver](https://www.google.com/intl/th_th/chrome/)
 
-- [Driver](https://www.google.com/intl/th_th/chrome/)
+- Balena Etcher [Balena Etcher](https://www.balena.io/etcher/)
 
-## Balena Etcher
+  Flash OS images to SD cards & USB drives, safely and easily.
 
-- [Balena Etcher](https://www.balena.io/etcher/)
-- Flash OS images to SD cards & USB drives, safely and easily.
-
-## WinRAR
-
-- [Download](https://software.thaiware.com/download.php?id=1523)
+- WinRAR [Download](https://software.thaiware.com/download.php?id=1523)

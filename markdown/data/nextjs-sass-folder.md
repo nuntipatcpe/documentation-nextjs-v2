@@ -4,23 +4,19 @@ popular: 0
 name: "sass folder"
 ---
 
-# main.scss
+- Folder Split file Sass
 
-- Sass
+  ```
+  mkdir -p sass/base,sass/components,sass/layout,sass/pages,sass/utils;
+  New-Item -p sass/main.scss
+  ```
 
-  - Split file Sass
+- Folder Not split files
 
-    ```
-    mkdir -p sass/base,sass/components,sass/layout,sass/pages,sass/utils;
-    New-Item -p sass/main.scss
-    ```
-
-  - Not split files
-
-    ```
-    mkdir -p sass/base,sass/utils
-    New-Item -p sass/main.scss
-    ```
+  ```
+  mkdir -p sass/base,sass/utils
+  New-Item -p sass/main.scss
+  ```
 
 - main.scss
 
@@ -42,10 +38,10 @@ name: "sass folder"
 
   ```
 
-- Usage
+- Usage import in \_appts.tsx
 
-  - _appts.tsx **tsconfig.json** "@/sass/_": \["sass/\_"]
+  **tsconfig.json** "@/sass/\_": \["sass/\_"]
 
-    ```
-    import "@/sass/main.scss";
-    ```
+  ```
+  import "@/sass/main.scss";
+  ```

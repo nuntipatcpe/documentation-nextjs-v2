@@ -1,26 +1,24 @@
 ---
 title: "Vite React"
 popular: 0
-name: "sass folder"
+name: "Sass folder"
 ---
 
-# main.scss
+# Sass folder
 
-- Sass
+- Folder split file Sass
 
-  - Split file Sass
+  ```
+  mkdir -p src/sass/base,src/sass/components,src/sass/layout,src/sass/pages,src/sass/utils;
+  New-Item -p src/sass/main.scss
+  ```
 
-    ```
-    mkdir -p src/sass/base,src/sass/components,src/sass/layout,src/sass/pages,src/sass/utils;
-    New-Item -p src/sass/main.scss
-    ```
+- Folder not split files
 
-  - Not split files
-
-    ```
-    mkdir -p src/sass/base,src/sass/utils
-    New-Item -p src/sass/main.scss
-    ```
+  ```
+  mkdir -p src/sass/base,src/sass/utils
+  New-Item -p src/sass/main.scss
+  ```
 
 - main.scss
 
@@ -42,10 +40,10 @@ name: "sass folder"
 
   ```
 
-- Usage
+- Usage import main.tsx
 
-  - index app **tsconfig.json** "@/sass/_": \["sass/_"]
+  **tsconfig.json** "@/sass/_": \["sass/_"]
 
-    ```
-    import "@/sass/main.scss";
-    ```
+  ```
+  import "@/sass/main.scss";
+  ```

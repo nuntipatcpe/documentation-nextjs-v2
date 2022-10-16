@@ -1,6 +1,6 @@
 ---
 title: "Redux lib"
-popular: 0
+popular: 1
 name: "Redux Toolkit TypeScript"
 ---
 

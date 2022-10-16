@@ -1,21 +1,10 @@
 ---
 title: "Sass"
 popular: 0
-name: "Mixin utils"
+name: "Transection utils"
 ---
 
-- \_layout.mixin.scss
-
-  **Flex**
-
-  ```
-  @mixin flex($direction: "row") {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-  }
-  ```
+# Transection
 
 - \_transection.mixin.scss
 

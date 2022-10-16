@@ -1,7 +1,7 @@
 ---
 title: "Vite React"
 popular: 2
-name: "environment"
+name: "Environment"
 ---
 
 # File environment (.env)

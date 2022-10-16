@@ -12,9 +12,7 @@ name: "Folder structure"
   mkdir -p src/components,src/components/layouts,src/components/pages
   ```
 
-- Type script folders
-
-  lib **create-react-component-folder** [view](https://www.npmjs.com/package/create-react-component-folder?activeTab=readme)
+- Type script folders **create-react-component-folder** lib
 
   ```
   pnpm install --save-dev create-react-component-folder

@@ -6,28 +6,20 @@ name: "Dev tool"
 
 # DEVELOP TOOL
 
-## Code Editors
+- Code Editors
 
-- Vs Code [Download](https://code.visualstudio.com/download)
+  - Visual studio code (Vscode) [Download](https://code.visualstudio.com/download)
 
-- IntelliJ IDEA [Download](https://www.jetbrains.com/idea/download/#section=windows)
+  - IntelliJ IDEA [Download](https://www.jetbrains.com/idea/download/#section=windows)
 
----
+- Database
 
-## Git
+  - XAMPP [Download](https://www.apachefriends.org)
 
-- Git [Download](https://code.visualstudio.com/download)
+  - XAMPP V.5.6.37 [Download](https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/5.6.37/) for mac
 
----
+- Design tool
 
-## Database
+  - Figma [Download](https://www.figma.com/files/recent?fuid=1064714180003820396)
 
-- XAMPP [Download](https://www.apachefriends.org)
-
-- XAMPP V.5.6.37 [Download](https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/5.6.37/) for mac
-
-## Design tool
-
-- Figma [Download](https://www.figma.com/files/recent?fuid=1064714180003820396)
-
-- Miro [Miro](https://miro.com/apps/)
+  - Miro [Miro](https://miro.com/apps/)
