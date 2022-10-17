@@ -13,7 +13,7 @@
 
 ## Useage
 
-<span className="img_markdown">![Cardfile](/image/Cardfile.png)</span>
+![Cardfile](/image/Cardfile.png)
 
 1. icon star -> sort by popular
 2. Click **label** link to file markdown
