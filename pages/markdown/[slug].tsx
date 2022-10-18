@@ -39,7 +39,6 @@ export async function getStaticProps({ params: { slug } }: any) {
 function MarkdownPage({ content }: any) {
   const { isAuthen } = useSelector(authenSelector);
   const dispath = useAppDispatch();
-
   const [key, setKey] = useState("");
 
   useEffect(() => {
@@ -49,7 +48,6 @@ function MarkdownPage({ content }: any) {
     }
   }, [isAuthen]);
 
-  console.log(isAuthen);
   return (
     <Layout>
       {!isAuthen && (

@@ -18,3 +18,17 @@ name: "Layout utils"
     flex-direction: $direction;
   }
   ```
+
+  **Position center**
+
+  ```
+  @mixin position-center($w: 500px, $h: 200px) {
+  position: fixed;
+  width: $w;
+  height: $h;
+  top: 50%;
+  left: 50%;
+  margin-top: calc($h / -2);
+  margin-left: calc($w / -2);
+  }
+  ```

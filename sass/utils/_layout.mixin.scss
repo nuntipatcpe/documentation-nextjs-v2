@@ -7,9 +7,6 @@
 
 @mixin position-center($w: 500px, $h: 200px) {
   position: fixed;
-  // max-width: 500px;
-  // max-height: 200px;
-
   width: $w;
   height: $h;
   top: 50%;
