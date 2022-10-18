@@ -23,10 +23,9 @@ function Layout({ children, isSearch }: Props) {
         <Link href={"/"}>
           <a className="logo lora">Documentation v.2</a>
         </Link>
-        {isSearch ? <Search /> : <span />}
+        {isSearch ? <Search isSearch /> : <span />}
         <Menu />
       </div>
-
       <Content open={open} setOpen={hendleOpen}>
         {children}
       </Content>

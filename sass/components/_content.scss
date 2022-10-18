@@ -12,7 +12,7 @@ main {
 
   @include sm {
     .app {
-      margin-top: 230px !important;
+      margin-top: $magin-top !important;
     }
   }
 
@@ -21,15 +21,15 @@ main {
     i {
       display: block;
       right: 0rem;
-      top: 230px !important;
+      top: $magin-top !important;
       position: fixed;
-      z-index: 1000;
+      z-index: 10;
     }
   }
 }
 @include sm {
   .open {
-    transform: translateY(-100%);
+    transform: translateY($magin-top-1);
   }
 }
 
