@@ -78,17 +78,18 @@
         margin-left: calc(80vw / -2);
         display: flex;
         border-radius: 0px 0px 5px 5px;
+
+        display: flex;
+        flex-direction: column;
         @include sm {
           display: none;
-          // z-index: 10;
         }
 
         &_menu {
-          padding: 1rem 2rem;
+          padding: 4rem 4rem;
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
           width: 100%;
-
           button {
             padding: 0.3rem;
             margin: 0.5rem 1rem;
@@ -118,7 +119,6 @@
           display: none;
           @include trans-400ms;
         }
-
         .display-block {
           @include trans-400ms;
           display: block !important;
