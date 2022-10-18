@@ -46,7 +46,7 @@ function MarkdownPage({ content }: any) {
     if (!token) {
       dispath(setAuthen(false));
     }
-  }, [isAuthen]);
+  }, [isAuthen, dispath]);
 
   return (
     <Layout>
