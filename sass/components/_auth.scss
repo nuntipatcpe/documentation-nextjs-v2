@@ -1,0 +1,47 @@
+@use "../utils/" as *;
+.auth {
+  @include position-center(350px, 300px);
+  z-index: 10;
+  background-color: $secondary-2;
+  @include flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 1rem;
+  input[type="text"],
+  input[type="password"] {
+    width: 70%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    // width: 40%;
+    padding: 0.5rem;
+    border: 2px solid $secondary-1;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $secondary-1;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid transparent;
+      color: $secondary-2;
+      background-color: $secondary-1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: $primary-1, $alpha: 0.4);
+    z-index: -1;
+  }
+}

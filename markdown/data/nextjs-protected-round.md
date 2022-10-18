@@ -25,7 +25,7 @@ name: "Proteced round"
 
   ```
   // eslint-disable-next-line react/display-name
-  const withAuth = (WrappedComponent: React.FC) => (props: any) => {
+  const withAuth = (WrappedComponent: React.FC<any>) => (props: any) => {
   // this hoc only supports client side rendering.
   if (isClient()) {
       const router = useRouter();

@@ -4,3 +4,16 @@
   align-items: center;
   flex-direction: $direction;
 }
+
+@mixin position-center($w: 500px, $h: 200px) {
+  position: fixed;
+  // max-width: 500px;
+  // max-height: 200px;
+
+  width: $w;
+  height: $h;
+  top: 50%;
+  left: 50%;
+  margin-top: calc($h / -2);
+  margin-left: calc($w / -2);
+}
