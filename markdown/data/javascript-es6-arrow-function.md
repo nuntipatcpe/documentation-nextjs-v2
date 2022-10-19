@@ -7,18 +7,23 @@ name: "Function"
 # Arrow Function
 
 - Original Function
-  <code language="javascript">
-  function originalName(p,p1){
-  return p+p1;
-  }</code>
+
+  ```
+  function originalName(p, p1) {
+    return p + p1;
+  }
+  ```
 
 - Arrow Function **Recommend**
-  <code language="javascript">
-  originalName = (p,p1)=>{
-  return p+p1;
-  }</code>
+
+  ```
+  originalName = (p, p1)=>{
+    return p+p1;
+  }
+  ```
 
   or
-  <code language="javascript">
-  originalName = (p,p1) => p+p1
-  </code>
+
+  ```
+  originalName = (p, p1) => p+p1
+  ```

@@ -10,19 +10,19 @@ name: "Asynchronous"
 
   - setTimeout
 
-  ```
-  console.log("start")
-  ```
+    ```
+    console.log("start")
+    ```
 
-  ```
-  setTimeout(()=>{
-      console.log("Loading..")
-  },3000)
-  ```
+    ```
+    setTimeout(()=>{
+        console.log("Loading..")
+    },3000)
+    ```
 
-  ```
-  console.log("complete")
-  ```
+    ```
+    console.log("complete")
+    ```
 
   - setInterval
 
@@ -30,9 +30,35 @@ name: "Asynchronous"
 
 ---
 
-## Callback
+## Async & Await
 
-**Callback**
+```
+function calulate(x, y) {
+  return new Promise(function (resolve, reject) {
+    if (connect) {
+      const sum = x + y;
+      resolve(`success${sum}`);
+    } else {
+      reject("fail");
+    }
+  })
+    .then((result) => {})
+    .catch((result) => {});
+}
+```
+
+```
+async function start(){
+    await calulate(x1,y);
+    await calulate(x2,y);
+    await calulate(x3,y);
+    awaitcalulate(x4,y);
+}
+```
+
+---
+
+## Callback
 
 ```
 function calulate(x,y,callback){
@@ -150,37 +176,4 @@ calulate(x,y)
 .then(function(result){
     return calulate(x3,result);
 });
-
 ```
-
----
-
-## Async & Await
-
-```
-fuction calulate(x,y){
-    return new Promise(function(resolve,reject){
-    if(connect){
-        const sum = x+y;
-        resolve(`success${sum}`);
-    }else{
-        reject('fail');
-    }
-})
-.then(result=>{})
-.catch(result=>{})
-}
-
-
-```
-
-```
-async function start(){
-    await calulate(x1,y);
-    await calulate(x2,y);
-    await calulate(x3,y);
-    awaitcalulate(x4,y);
-}
-```
-
-start()

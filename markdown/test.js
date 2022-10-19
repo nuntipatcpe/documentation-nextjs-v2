@@ -1,3 +1,12 @@
-const data = [99, 200, 300, 999, 999];
-const lastdata = data.slice(1, 3);
-console.log(lastdata);
+function calulate(x, y) {
+  return new Promise(function (resolve, reject) {
+    if (connect) {
+      const sum = x + y;
+      resolve(`success${sum}`);
+    } else {
+      reject("fail");
+    }
+  })
+    .then((result) => {})
+    .catch((result) => {});
+}
