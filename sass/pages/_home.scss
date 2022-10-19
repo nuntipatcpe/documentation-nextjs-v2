@@ -28,7 +28,7 @@
       position: relative;
       background-color: $primary-1;
       margin: 2rem 1rem;
-      border-radius: 0px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px;
       min-height: 60px;
       display: flex;
       justify-content: space-between;
@@ -39,6 +39,27 @@
         align-items: center;
         justify-content: center;
         width: 20%;
+
+        &:hover > &_popular {
+          @include flex;
+          align-items: flex-start;
+        }
+        &_popular {
+          color: $secondary-1;
+          background-color: $primary-1;
+          box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.5);
+          position: absolute;
+          top: -30px;
+          left: 0;
+          padding: 0.5rem;
+          border-radius: 5px 5px 0px 0px;
+          display: none;
+          height: 40px;
+          span {
+            margin-left: 5px;
+            font-size: 0.7rem;
+          }
+        }
 
         &_tri {
           @include flex;
@@ -54,6 +75,7 @@
           }
         }
       }
+
       &_link {
         overflow: auto;
         white-space: nowrap;
@@ -68,21 +90,23 @@
         }
         @include card_file_content_link;
       }
-      &_popular {
-        color: $secondary-1;
-        background-color: $primary-1;
-        box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.5);
-        position: absolute;
-        top: -29px;
-        padding: 0 0.5rem;
-        border-radius: 5px 5px 0px 0px;
-        @include flex;
-        height: 30px;
-        span {
-          margin-left: 5px;
-          font-size: 0.7rem;
-        }
-      }
+
+      // &_popular {
+      //   color: $secondary-1;
+      //   background-color: $primary-1;
+      //   box-shadow: 0 0 20px 1px rgba($color: $primary-1, $alpha: 0.5);
+      //   position: absolute;
+      //   top: -29px;
+      //   padding: 0 0.5rem;
+      //   border-radius: 5px 5px 0px 0px;
+
+      //   @include flex;
+      //   height: 30px;
+      //   span {
+      //     margin-left: 5px;
+      //     font-size: 0.7rem;
+      //   }
+      // }
     }
   }
 }

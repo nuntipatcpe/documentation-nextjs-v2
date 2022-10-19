@@ -1,6 +1,6 @@
 export const TOKEN = "TOKEN";
 
-export const MENU = ["Typescript-", "React-", "Nextjs-", "NodeJS-", "Libery-"];
+export const MENU = ["React-", "Libery-", "Utils", "Nextjs-", "NodeJS-"];
 
 // export const MENU = [
 //   "Typescript-",

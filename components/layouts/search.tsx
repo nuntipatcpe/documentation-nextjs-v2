@@ -43,7 +43,9 @@ export default function Search({ isSearch }: Props) {
           onClick={() => {
             setSearchTerm("");
           }}
-          className={`search_colse ${searchTerm === "" && "search_colse_none"}`}
+          className={`search_input_colse ${
+            searchTerm === "" && "search_input_colse_none"
+          }`}
         >
           <Image src={"/icons/close.svg"} width={15} height={15}></Image>
         </div>

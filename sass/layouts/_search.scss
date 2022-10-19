@@ -8,31 +8,39 @@
     border-radius: 5px;
     width: 100%;
 
+    min-width: 400px;
     input[type="text"] {
-      min-width: 200px;
-      width: 35%;
+      width: 50%;
       outline: none;
       height: 35px;
       padding: 0 1rem;
+      text-align: center;
       border-radius: 5px;
       border: none;
-      @include trans-200ms(width);
+      z-index: 1;
+
+      // @include trans-200ms(width);
       &:focus {
-        @include trans-200ms(width);
-        width: 80%;
+        // @include trans-200ms(text-align);
+        // width: 80%;
+        // text-align: left;
       }
 
       @include sm {
         margin: 1rem 0;
       }
     }
-  }
-  &_colse {
-    margin-left: -1.5rem;
-    cursor: pointer;
-    @include flex;
-    &_none {
-      display: none;
+    position: relative;
+    &_colse {
+      z-index: 1000;
+      margin-left: -1.5rem;
+      cursor: pointer;
+      @include flex;
+      position: absolute;
+      right: 27%;
+      &_none {
+        display: none;
+      }
     }
   }
 

@@ -88,6 +88,15 @@ const Home = ({ posts }: Posts) => {
                           width={30}
                           height={30}
                         />
+                        <div className="home_card_content_icon_popular">
+                          <Image
+                            src="/icons/GroupStars.svg"
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
+                          <span>{e2.frontmatter.popular}</span>
+                        </div>
                       </span>
 
                       <div className="home_card_content_link">
@@ -109,16 +118,6 @@ const Home = ({ posts }: Posts) => {
                             height={35}
                           />
                         </a>
-                      </div>
-
-                      <div className="home_card_content_popular">
-                        <Image
-                          src="/icons/GroupStars.svg"
-                          alt=""
-                          width={20}
-                          height={20}
-                        />
-                        <span>{e2.frontmatter.popular}</span>
                       </div>
                     </div>
                   );
