@@ -7,14 +7,12 @@
   padding: 1rem 2rem;
   position: relative;
 
-  i {
-    display: none;
+  @include sm {
+    margin-top: $magin-top;
   }
 
-  @include sm {
-    .app {
-      margin-top: $magin-top !important;
-    }
+  &_none {
+    display: none;
   }
 
   @include sm {
@@ -22,27 +20,25 @@
     i {
       display: block;
       right: 0rem;
-      top: $magin-top !important;
       position: fixed;
       z-index: 10;
     }
   }
-}
 
-.active {
-  .app {
+  &_open {
     @include sm {
       @include trans-400ms();
       margin-top: 0px !important;
     }
-  }
-  @include sm {
-    i {
-      @include trans-400ms();
-      top: 0rem !important;
+
+    @include sm {
+      i {
+        @include trans-400ms();
+        top: 0rem !important;
+      }
     }
-  }
-  .content {
-    margin-top: 0;
+    .content {
+      margin-top: 0;
+    }
   }
 }

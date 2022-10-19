@@ -9,15 +9,16 @@ type Props = {
 
 function Content({ open, setOpen, children }: Props) {
   return (
-    <main className={`content ${open && "active"}`}>
+    <main className={`content ${open && "content_open"}`}>
       <i
+        className="content_none"
         onClick={() => {
           setOpen();
         }}
       >
         <Image src={"/icons/menu.svg"} alt="*" width={30} height={30} />
       </i>
-      <div className="">{children}</div>
+      {children}
     </main>
   );
 }

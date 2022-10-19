@@ -22,7 +22,7 @@ function Layout({ children, isSearch }: Props) {
 
   return (
     <div className="layout">
-      <div className={`header ${open && "open"}`}>
+      <div className={`header ${open && "header_open"}`}>
         <Link href={"/"}>
           <a className="header_logo lora">Documentation v.2</a>
         </Link>

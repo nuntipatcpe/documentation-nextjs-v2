@@ -42,10 +42,16 @@
     padding: 2rem 0;
     @include flex(column);
   }
+
+  @include trans-200ms(transform);
+  transform: translateY(0);
+  &_open {
+    @include trans-200ms(transform);
+    transform: translateY(-100%);
+  }
 }
 
 @include sm {
   .open {
-    transform: translateY($magin-top-1);
   }
 }

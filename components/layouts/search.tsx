@@ -1,6 +1,7 @@
 import { search } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
 import { MENU } from "@/utils/constant";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 type Props = {
@@ -10,13 +11,12 @@ type Props = {
 export default function Search({ isSearch }: Props) {
   const dispatch = useAppDispatch();
   const [searchTerm, setSearchTerm] = useState("");
-
   const [disable, setDisable] = useState(false);
 
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       dispatch(search(searchTerm));
-    }, 500);
+    }, 400);
     return () => clearTimeout(delayDebounceFn);
   }, [searchTerm, dispatch]);
 
@@ -29,15 +29,26 @@ export default function Search({ isSearch }: Props) {
         }
       }}
     >
-      <input
-        type="text"
-        placeholder="Serach"
-        onChange={(e) => setSearchTerm(e.target.value)}
-        onFocus={() => {
-          setDisable(true);
-        }}
-        value={searchTerm.replace("-", "")}
-      />
+      <div className="search_input">
+        <input
+          type="text"
+          placeholder="Serach"
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onFocus={() => {
+            setDisable(true);
+          }}
+          value={searchTerm.replace("-", "")}
+        />
+        <div
+          onClick={() => {
+            setSearchTerm("");
+          }}
+          className={`search_colse ${searchTerm === "" && "search_colse_none"}`}
+        >
+          <Image src={"/icons/close.svg"} width={15} height={15}></Image>
+        </div>
+      </div>
+
       {isSearch ? (
         <div className={`search_box ${disable && "search_box_open"}`}>
           <div className="search_box_menu">
@@ -54,10 +65,10 @@ export default function Search({ isSearch }: Props) {
               </button>
             ))}
           </div>
-          <div
+          <p
             className={`search_box_bg ${disable && "search_box_bg_close"}`}
             onClick={() => setDisable(!disable)}
-          ></div>
+          />
         </div>
       ) : (
         <span />
