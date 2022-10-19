@@ -12,12 +12,13 @@ import authenSlice, {
 } from "@/store/slices/authenSlice";
 import { TOKEN } from "@/utils/constant";
 import { useAppDispatch } from "@/store/store";
+import Auth from "@/components/auth";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("markdown/data");
   const paths = files.map((fileName) => ({
     params: {
-      slug: fileName.replace(".md", ""),
+      mdSlug: fileName.replace(".md", ""),
     },
   }));
   return {
@@ -26,8 +27,8 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { slug } }: any) {
-  const fileName = fs.readFileSync(`markdown/data/${slug}.md`, "utf-8");
+export async function getStaticProps({ params: { mdSlug } }: any) {
+  const fileName = fs.readFileSync(`markdown/data/${mdSlug}.md`, "utf-8");
   const { content } = matter(fileName);
   return {
     props: {
@@ -39,7 +40,6 @@ export async function getStaticProps({ params: { slug } }: any) {
 function MarkdownPage({ content }: any) {
   const { isAuthen } = useSelector(authenSelector);
   const dispath = useAppDispatch();
-  const [key, setKey] = useState("");
 
   useEffect(() => {
     const token = localStorage.getItem(TOKEN);
@@ -50,28 +50,7 @@ function MarkdownPage({ content }: any) {
 
   return (
     <Layout>
-      {!isAuthen && (
-        <form
-          className="auth"
-          onSubmit={(e) => {
-            e.preventDefault();
-            if (key === "boomdev1234") {
-              localStorage.setItem(TOKEN, "xxxx-xxx-nnnn");
-              dispath(setAuthen(true));
-            } else {
-              alert("error");
-            }
-          }}
-        >
-          <input
-            type="password"
-            placeholder="password"
-            value={key}
-            onChange={(e) => setKey(e.target.value)}
-          />
-          <button type="submit">successfully</button>
-        </form>
-      )}
+      {!isAuthen && <Auth />}
 
       <div className="markdown">
         <Markdown
