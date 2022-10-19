@@ -1,13 +1,14 @@
 @import "./base/reset";
 
-@import "./layouts/layoutBase";
+@import "./layouts/layout";
+@import "./layouts/herder";
+@import "./layouts/search";
 
 @import "./pages/app";
 @import "./pages/preview";
 
 @import "./components/markdown";
 @import "./components/code";
-@import "./components/search";
 @import "./components/menubar";
 @import "./components/content";
 @import "./components/auth";

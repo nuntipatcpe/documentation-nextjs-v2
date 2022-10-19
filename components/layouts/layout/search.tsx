@@ -22,7 +22,7 @@ export default function Search({ isSearch }: Props) {
 
   return (
     <div
-      className="search-box"
+      className="search"
       onKeyPress={(e) => {
         if (e.key === "Enter") {
           setDisable(!disable);
@@ -39,10 +39,11 @@ export default function Search({ isSearch }: Props) {
         value={searchTerm.replace("-", "")}
       />
       {isSearch ? (
-        <div className={`box ${disable && "disable"}`}>
-          <div className="box_menu">
+        <div className={`search_box ${disable && "search_box_open"}`}>
+          <div className="search_box_menu">
             {MENU.map((e) => (
               <button
+                key={e}
                 onClick={() => {
                   setSearchTerm(e);
                   dispatch(search(e));
@@ -54,7 +55,7 @@ export default function Search({ isSearch }: Props) {
             ))}
           </div>
           <div
-            className={`bg ${disable && "display-block"}`}
+            className={`search_box_bg ${disable && "search_box_bg_close"}`}
             onClick={() => setDisable(!disable)}
           ></div>
         </div>

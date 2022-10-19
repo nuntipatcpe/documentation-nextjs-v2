@@ -18,13 +18,20 @@ function Layout({ children, isSearch }: Props) {
   };
 
   return (
-    <div className="layoutBase">
-      <div className={`home ${open && "open"}`}>
+    <div className="layout">
+      <div className={`header ${open && "open"}`}>
         <Link href={"/"}>
-          <a className="logo lora">Documentation v.2</a>
+          <a className="header_logo lora">Documentation v.2</a>
         </Link>
         {isSearch ? <Search isSearch /> : <span />}
-        <Menu />
+        {/* <Menu /> */}
+        {/* <div className="header_menu"> */}
+        <Link href={"/howToUse"}>
+          <a className="header_menu" href="">
+            How to Create file Markdown ?
+          </a>
+        </Link>
+        {/* </div> */}
       </div>
       <Content open={open} setOpen={hendleOpen}>
         {children}

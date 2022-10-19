@@ -1,5 +1,6 @@
-@forward "./layout.mixin";
-@forward "./magin.variable";
-@forward "./transection.mixin";
-@forward "./colors.variable";
+@forward "./layout";
+@forward "./mobile";
+@forward "./transection";
+@forward "./colors";
 @forward "./breakpoint";
+@forward "./scrollbars";

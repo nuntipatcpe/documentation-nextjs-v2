@@ -27,11 +27,6 @@ main {
     }
   }
 }
-@include sm {
-  .open {
-    transform: translateY($magin-top-1);
-  }
-}
 
 .active {
   .app {
