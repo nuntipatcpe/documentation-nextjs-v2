@@ -6,17 +6,21 @@ name: "Filter"
 
 # Filter
 
+```
+const result = data.filter((e) => {});
+```
+
 - Return to **Array** or **Object** that meet the conditions
 
-**Array**
+  **Array**
 
-```
-const data = [10,20,30]
-const result = data.filter(e=>{
-    return e>20;
-})
-console.log(result)
-```
+  ```
+  const data = [10,20,30]
+  const result = data.filter((e) => {
+    return e > 20;
+  });
+  console.log(result)
+  ```
 
 **Object**
 
@@ -44,8 +48,8 @@ const data =[
     },
 ]
 
-const result = data.filter(e=>{
-    return e.name=="boom"
-})
+const result = data.filter((e) => {
+  return e.name == "boom";
+});
 console.log(result)
 ```

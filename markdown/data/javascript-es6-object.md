@@ -6,18 +6,18 @@ name: "Object"
 
 # Object
 
-<code language="javascript">
+```
 const customer = {
     id : "123",
-    email : "nuntipatcpe@gmail.com",
-    userName : "boom"
+    email : "nuntipatcpexxxoom"
 }
 console.log(customer);
-</code>
+```
 
 - same variable name
-  <code language="javascript">
-  const email = "nuntipatcpe@gmail.com";
+
+  ```
+  const email = "nuntipxxx@gmail.com";
   const id = "123";
   const userName = "boom";
   const customer = {
@@ -25,11 +25,14 @@ console.log(customer);
   email,
   userName,
   }
-  console.log(customer);</code>
+  console.log(customer);
+
+  ```
 
 - can set method
-  <code language="javascript">
-  const email = "nuntipatcpe@gmail.com";
+
+  ```
+  const email = "nuntipxxxx@gmail.com";
   const customer = {
   id : "123",
   showEmail(name){
@@ -38,4 +41,4 @@ console.log(customer);
   userName : "boom"
   }
   customer.showEmail("boom");
-  </code>
+  ```
