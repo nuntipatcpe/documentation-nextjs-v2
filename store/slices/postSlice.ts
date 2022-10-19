@@ -16,12 +16,15 @@ const searchSlice = createSlice({
   initialState: initialValues,
 
   reducers: {
-    search: (state: initialStateType, actions) => {
+    setSearch: (state: initialStateType, actions) => {
       state.search = actions.payload;
+    },
+    clearSearch: (state: initialStateType) => {
+      state.search = " ";
     },
   },
 });
 
-export const { search } = searchSlice.actions;
+export const { setSearch, clearSearch } = searchSlice.actions;
 export const searchSelector = (store: RootState) => store.postReducer;
 export default searchSlice.reducer;

@@ -1,10 +1,10 @@
-import { search } from "@/store/slices/postSlice";
+import { clearSearch, setSearch } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
-import Image from "next/image";
+
 import Link from "next/link";
 import React, { ReactNode, useState } from "react";
 import Content from "./content";
-import Menu from "./menu";
+
 import Search from "./search";
 
 type Props = {
@@ -16,6 +16,8 @@ function Layout({ children, isSearch }: Props) {
   const [open, setOpen] = useState(true);
   const dispatch = useAppDispatch();
 
+  const [value, setValue] = useState("");
+
   const hendleOpen = () => {
     setOpen(!open);
   };
@@ -23,9 +25,16 @@ function Layout({ children, isSearch }: Props) {
   return (
     <div className="layout">
       <div className={`header ${open && "header_open"}`}>
-        <Link href={"/"}>
-          <a className="header_logo lora">Documentation v.2</a>
-        </Link>
+        <div
+          onClick={() => {
+            dispatch(clearSearch());
+            setValue("");
+          }}
+        >
+          <Link href={"/"}>
+            <a className="header_logo lora">Documentation v.2</a>
+          </Link>
+        </div>
         {isSearch ? <Search isSearch /> : <span />}
         {/* <Menu /> */}
         {/* <div className="header_menu"> */}

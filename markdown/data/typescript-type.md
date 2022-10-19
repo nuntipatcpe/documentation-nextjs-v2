@@ -1,5 +1,5 @@
 ---
-title: "TypeScript"
+title: "Typescript"
 popular: 0
 name: "Type"
 ---
