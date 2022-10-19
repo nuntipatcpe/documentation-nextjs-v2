@@ -3,10 +3,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-
   padding: 0 2rem;
   position: fixed;
-
   height: 100px;
   width: 100%;
   top: 0;
@@ -43,15 +41,13 @@
     @include flex(column);
   }
 
-  @include trans-200ms(transform);
   transform: translateY(0);
+  @include trans-200ms(transform);
+
   &_open {
     @include trans-200ms(transform);
-    transform: translateY(-100%);
-  }
-}
-
-@include sm {
-  .open {
+    @include sm {
+      transform: translateY(-100%);
+    }
   }
 }

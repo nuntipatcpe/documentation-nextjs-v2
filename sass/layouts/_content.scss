@@ -1,4 +1,5 @@
 @use "../utils/index.scss" as *;
+
 .content {
   max-width: 1400px;
   width: 100%;
@@ -9,13 +10,7 @@
 
   @include sm {
     margin-top: $magin-top;
-  }
-
-  &_none {
-    display: none;
-  }
-
-  @include sm {
+    padding: 1rem 0rem;
     @include trans-400ms();
     i {
       display: block;
@@ -24,21 +19,17 @@
       z-index: 10;
     }
   }
-
+  &_close {
+    display: none;
+  }
   &_open {
     @include sm {
       @include trans-400ms();
-      margin-top: 0px !important;
-    }
-
-    @include sm {
+      margin-top: 0px;
       i {
         @include trans-400ms();
-        top: 0rem !important;
+        top: 0rem;
       }
-    }
-    .content {
-      margin-top: 0;
     }
   }
 }

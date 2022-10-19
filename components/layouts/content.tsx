@@ -11,7 +11,7 @@ function Content({ open, setOpen, children }: Props) {
   return (
     <main className={`content ${open && "content_open"}`}>
       <i
-        className="content_none"
+        className="content_close"
         onClick={() => {
           setOpen();
         }}
