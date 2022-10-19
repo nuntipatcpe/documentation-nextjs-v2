@@ -10,8 +10,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-
   background-color: rgba($color: $primary-1, $alpha: 0.95);
+
   a {
     color: $secondary-1;
     text-decoration: none;
@@ -20,6 +20,9 @@
     font-weight: bold;
     font-size: 1.5rem;
     color: $secondary-1;
+    @include breakpoint(780px) {
+      font-size: 1rem;
+    }
   }
 
   &_menu {
@@ -31,6 +34,10 @@
     }
     @include sm {
       margin: 1rem;
+    }
+
+    @include breakpoint(780px) {
+      font-size: 10px;
     }
   }
 
