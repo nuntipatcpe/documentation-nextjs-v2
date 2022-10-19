@@ -1,7 +1,7 @@
 ---
 title: "NextJS"
 popular: 0
-name: "Next config"
+name: "document Config"
 ---
 
 - \_document.tsx

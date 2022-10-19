@@ -15,6 +15,8 @@ name: "Extension"
   - Path intellisense
   - Prettier code formatter
   - Vscode icons
+  - Live Share
+  - Paste JSON as Code
 
   ```
   code --install-extension formulahendry.auto-rename-tag;
@@ -24,6 +26,8 @@ name: "Extension"
   code --install-extension christian-kohler.path-intellisense;
   code --install-extension esbenp.prettier-vscode;
   code --install-extension vscode-icons-team.vscode-icons;
+  code --install-extension ms-vsliveshare.vsliveshare;
+  code --install-extension quicktype.quicktype;
   ```
 
 - **Javascript**
@@ -59,11 +63,13 @@ name: "Extension"
   - REST Client
   - SQLite
   - SQLite Viewer
+  - Database Client
 
   ```
   code --install-extension humao.rest-client;
   code --install-extension alexcvzz.vscode-sqlite;
   code --install-extension qwtel.sqlite-viewer;
+  code --install-extension cweijan.vscode-database-client2;
   ```
 
 - **Golang**

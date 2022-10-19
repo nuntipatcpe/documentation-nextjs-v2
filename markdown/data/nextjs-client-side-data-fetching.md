@@ -20,26 +20,26 @@ name: "Client side data fetching"
     pnpm i axios
     ```
 
-- Exam
+  - Exam
 
-```
-import axios from "axios";
-import useSWR from "swr";
-import React from "react";
+    ```
+    import axios from "axios";
+    import useSWR from "swr";
+    import React from "react";
 
-export default function Client() {
-    //   const fetcher = (...args) => fetch(...args).then((res) => res.json());
-    const fetcher = (...args) => axios(...args).then((res) => res.data);
+    export default function Client() {
+        //   const fetcher = (...args) => fetch(...args).then((res) => res.json());
+        const fetcher = (...args) => axios(...args).then((res) => res.data);
 
-    const url = " ";
-    const { data, error } = useSWR(url, fetcher);
+        const url = " ";
+        const { data, error } = useSWR(url, fetcher);
 
-    if (error) return <div>Failed to load</div>
-    if (!data) return <div>Loading...</div>
+        if (error) return <div>Failed to load</div>
+        if (!data) return <div>Loading...</div>
 
-    return <h1>{JSON.stringify(data)}</h1> ;
-}
-```
+        return <h1>{JSON.stringify(data)}</h1> ;
+    }
+    ```
 
 - useEffect
 
@@ -61,6 +61,6 @@ export default function Client() {
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
 
-    return <h1>{JSON.stringify(data)}</h1> ;
-  }
+      return <h1>{JSON.stringify(data)}</h1> ;
+    }
   ```

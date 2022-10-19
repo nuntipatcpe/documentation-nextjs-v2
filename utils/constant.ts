@@ -3,12 +3,11 @@ export const TOKEN = "TOKEN";
 export const MenuDevtools = [
   "React-",
   "Nextjs-",
+  "Nodejs-",
+  "gin-",
   "Libery-",
   "Utils",
-  "gin-",
-  "Axios-",
   "Sass",
-  "NodeJS",
 ];
 export const MenuBasicLanguage = [
   "Javascript-",
@@ -17,4 +16,4 @@ export const MenuBasicLanguage = [
   "SQL-",
 ];
 
-export const MenuConfig = ["Deploy", "Get started"];
+export const MenuConfig = ["Config", "Deploy", "Get started"];
