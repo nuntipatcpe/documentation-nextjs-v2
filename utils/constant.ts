@@ -8,6 +8,7 @@ export const MenuDevtools = [
   "gin-",
   "Axios-",
   "Sass",
+  "NodeJS",
 ];
 export const MenuBasicLanguage = ["Javascript-", "Typescript-", "Golang-"];
 

@@ -9,123 +9,187 @@ name: "Array Function"
 - Join
 
   ```
-  const data =[100,200,300]
-  console.log(data)
-  console.log(data.join())
-   console.log(data.join("\*"))
-  console.log(data.join(""))
+  console.log(data.join("*"));
+  ```
+
+  Example
+
+  ```
+  const data = [100, 200, 300];
+  console.log(data.join("*"));
+  ```
+
+  Output
+
+  ```
+  100 * 200 * 300
   ```
 
 - Concat
 
   ```
-  const data =[100,200,300]
-  const data2 =[400]
-  const allData = data.concat(data2)
-  console.log(allData)
+  const allData = data.concat(data2);
+  ```
+
+  Example
+
+  ```
+  const data = [100, 200, 300];
+  const data2 = [999];
+  const allData = data.concat(data2);
+  console.log(allData);
+  ```
+
+  Output
+
+  ```
+  [ 100, 200, 300, 999 ]
   ```
 
 - Push
 
-**Add** item to **last** [ index ]
+  **Add** item to **last** [ index ]
 
-```
-const data =[100,200,300];
-data.push(...[500,100,2000])
-console.log(data);
-```
+  ```
+  data.push(...[99, 999, 9999]);
+  ```
+
+  Example
+
+  ```
+  const data = [100, 200, 300];
+  data.push(...[99, 999, 9999]);
+  console.log(data);
+  ```
+
+  Output
+
+  ```
+  [ 100, 200, 300, 99, 999, 9999 ]
+  ```
 
 - Unshipft
 
-**Add** item to **first** [ index ]
+  **Add** item to **first** [ index ]
 
-```
-const data =[100,200,300];
-data.unshift(999)
-console.log(data);
-```
+  ```
+  data.unshift(...[99, 999, 9999]);
+  ```
+
+  Example
+
+  ```
+  const data = [100, 200, 300];
+  data.unshift(...[99, 999, 9999]);
+  console.log(data);
+  ```
+
+  Output
+
+  ```
+  [ 99, 999, 9999, 100, 200, 300 ]
+  ```
 
 - Pop
 
-**remove** item to **last** [ index ]
+  **remove** item to **last** [ index ]
 
-```
-const data =[100,200,300];
-data.pop()
-console.log(data);
-```
+  ```
+  data.pop()
+  ```
+
+  Example
+
+  ```
+  const data = [100, 200, 999];
+  data.pop();
+  console.log(data);
+  ```
+
+  ```
+  [ 100, 200 ]
+  ```
 
 - Shift
 
-**remove** item to **first** [ index ]
+  **remove** item to **first** [ index ]
 
-```
-const data =[100,200,300];
-data.shift()
-console.log(data);
-```
+  ```
+  data.shift()
+  ```
+
+  Example
+
+  ```
+  const data = [999, 200, 300];
+  data.shift();
+  console.log(data);
+  ```
+
+  Output
+
+  ```
+  [ 200, 300 ]
+  ```
 
 - Splice
 
-**remove** item to **between** x1 - x2 [ index ]
+  **remove** item to **between** x1 - x2 [ index ]
 
-```
-const data =[100,200,300,400,500];
-data.splice(3,4)
-console.log(data);
-```
+  ```
+  data.splice(3,4)
+  ```
 
-**remove** and **insert** item to **between** a-b [ index ]
+  Example
 
-by **specifying** the **3rd parameter**
+  ```
+  const data = [100, 200, 300, 99, 999];
+  data.splice(3, 4);
+  console.log(data);
+  ```
 
-```
-const data =[100,200,300,400,500];
-data.splice(1,2,999)
-console.log(data);
-```
+  Output
 
-## Slice
+  ```
+  [ 100, 200, 300 ]
+  ```
 
-- **pull** item **between** x1 - x2 [ index ]
-- **Does not affect old arrays.**
+  **remove** and **insert** item to **between** a-b [ index ]
 
-```
-const data =[100,200,300,400,500];
-const lastdata = data.slice(1,3)
-console.log(lastdata);
-```
+  by **specifying** the **3rd parameter**
 
----
+  ```
+  const data = [100, 999, 99, 400, 500];
+  data.splice(1, 2, 999);
+  console.log(data);
+  ```
 
-## Search in Array
+  Output
 
-- indexOf
+  ```
+  [ 100, 999, 400, 500 ]
+  ```
 
-**return index**
+- Slice
 
-```
-const data =[100,200,300,400,500]
-const index = data.indexOf(500)
-console.log(index)
-```
+  **pull** item **between** x1 - x2 [ index ]
 
-- fine
+  **Does not affect old arrays.**
 
-**return data**
+  ```
+  data.slice(1,3)
+  ```
 
-```
-const data =[100,200,300,400,500]
-const search = data.find(e=>e===100)
-console.log(search);
-```
+  Example
 
-- fineIndex
+  ```
+  const data = [99, 200, 300, 999, 999];
+  const lastdata = data.slice(1, 3);
+  console.log(lastdata);
+  ```
 
-**return index**
+  Output
 
-```
-const data =[100,200,300,400,500]
-const search = data.findIndex(e=>e===300)
-console.log(search);
-```
+  ```
+  [ 200, 300 ]
+  ```

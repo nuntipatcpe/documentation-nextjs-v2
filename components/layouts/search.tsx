@@ -28,7 +28,7 @@ export default function Search({ isSearch }: Props) {
 
   useEffect(() => {
     setSearchTerm("");
-  }, [search === " "]);
+  }, [search === " ", dispatch]);
 
   return (
     <div
@@ -57,7 +57,12 @@ export default function Search({ isSearch }: Props) {
             searchTerm === "" && "search_input_colse_none"
           }`}
         >
-          <Image src={"/icons/close.svg"} width={15} height={15}></Image>
+          <Image
+            alt="*"
+            src={"/icons/close.svg"}
+            width={15}
+            height={15}
+          ></Image>
         </div>
       </div>
 

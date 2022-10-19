@@ -29,3 +29,21 @@ name: "Get started"
   ```
   go build ./file
   ```
+
+## Automatically restart
+
+- node mon
+
+  ```
+  npm i -g nodemon
+  ```
+
+  ```
+  nodemon --exec go run .\index.go
+  ```
+
+- go-mon **mac or linux**
+
+  ```
+  npx go-mon name.go
+  ```
