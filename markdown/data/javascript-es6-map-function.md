@@ -1,6 +1,6 @@
 ---
 title: "Javascript"
-popular: 0
+popular: 1
 name: "Map"
 ---
 
