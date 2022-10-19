@@ -1,3 +1,5 @@
+import { search } from "@/store/slices/postSlice";
+import { useAppDispatch } from "@/store/store";
 import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode, useState } from "react";
@@ -12,6 +14,7 @@ type Props = {
 
 function Layout({ children, isSearch }: Props) {
   const [open, setOpen] = useState(true);
+  const dispatch = useAppDispatch();
 
   const hendleOpen = () => {
     setOpen(!open);
@@ -33,6 +36,7 @@ function Layout({ children, isSearch }: Props) {
         </Link>
         {/* </div> */}
       </div>
+
       <Content open={open} setOpen={hendleOpen}>
         {children}
       </Content>

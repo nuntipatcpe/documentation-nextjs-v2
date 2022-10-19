@@ -12,7 +12,6 @@ import Layout from "@/components/layouts/layout";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("markdown/data");
-
   //sort by popula
   const posts = sortArray(
     files.map((fileName) => {
@@ -71,62 +70,65 @@ const Home = ({ posts }: Posts) => {
   );
 
   return (
-    <>
-      <Layout isSearch>
-        <div className="app">
-          {title?.map((e) => {
-            return (
-              <div key={e} className="card">
-                <h1 className="card_title">{e}</h1>
-                <div className="card_file">
-                  {fileName?.map((e2) => {
-                    if (e2.frontmatter.title === e) {
-                      return (
-                        <div className="card_file_content" key={e2.slug}>
-                          <span className="card_file_content_link">
-                            <Image
-                              src="/icons/MD.svg"
-                              alt="MD"
-                              width={30}
-                              height={30}
-                            />
-                            <Link href={`/markdown/${e2.slug}`}>
-                              <a href="">{e2.frontmatter.name}</a>
-                            </Link>
-                          </span>
-                          <a
-                            href={`/markdown/${e2.slug}`}
-                            target={"blank"}
-                            className="back"
-                          >
-                            <Image
-                              src="/icons/back.svg"
-                              alt="MD"
-                              width={35}
-                              height={35}
-                            />
-                          </a>
+    <Layout isSearch>
+      {title?.map((e) => {
+        return (
+          <div key={e} className="home">
+            <h1 className="home_title">{e}</h1>
 
-                          <span className="card_file_content_popular">
-                            <Image
-                              src="/icons/GroupStars.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
-                            <span>{e2.frontmatter.popular}</span>
-                          </span>
-                        </div>
-                      );
-                    }
-                  })}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </Layout>
-    </>
+            <div className="home_card">
+              {fileName?.map((e2) => {
+                if (e2.frontmatter.title === e) {
+                  return (
+                    <div className="home_card_content" key={e2.slug}>
+                      <span className="home_card_content_icon">
+                        <Image
+                          src="/icons/MD.svg"
+                          alt="MD"
+                          width={30}
+                          height={30}
+                        />
+                      </span>
+
+                      <div className="home_card_content_link">
+                        <Link href={`/markdown/${e2.slug}`}>
+                          <a href="">{e2.frontmatter.name}</a>
+                        </Link>
+                      </div>
+
+                      <div className="home_card_content_icon">
+                        <a
+                          href={`/markdown/${e2.slug}`}
+                          target={"blank"}
+                          className="home_card_content_icon_tri"
+                        >
+                          <Image
+                            src="/icons/back.svg"
+                            alt="MD"
+                            width={35}
+                            height={35}
+                          />
+                        </a>
+                      </div>
+
+                      <div className="home_card_content_popular">
+                        <Image
+                          src="/icons/GroupStars.svg"
+                          alt=""
+                          width={20}
+                          height={20}
+                        />
+                        <span>{e2.frontmatter.popular}</span>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </Layout>
   );
 };
 
