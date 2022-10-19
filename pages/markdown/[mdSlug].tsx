@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
-import Layout from "@/components/layouts/layout";
+import Layout from "@/components/layouts";
 import { useSelector } from "react-redux";
 import authenSlice, {
   authenSelector,

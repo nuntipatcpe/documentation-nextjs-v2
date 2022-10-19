@@ -8,7 +8,7 @@ import { searchSelector } from "@/store/slices/postSlice";
 import { redundancyArray, sortArray } from "@/utils/array.util";
 import { Posts } from "../models/post.model";
 import Image from "next/image";
-import Layout from "@/components/layouts/layout";
+import Layout from "@/components/layouts";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("markdown/data");

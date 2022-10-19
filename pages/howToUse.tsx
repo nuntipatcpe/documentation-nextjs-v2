@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
-import Layout from "@/components/layouts/layout";
+import Layout from "@/components/layouts";
 
 type Props = { content: string };
 
