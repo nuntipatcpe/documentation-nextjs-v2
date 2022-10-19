@@ -10,6 +10,11 @@ export const MenuDevtools = [
   "Sass",
   "NodeJS",
 ];
-export const MenuBasicLanguage = ["Javascript-", "Typescript-", "Golang-"];
+export const MenuBasicLanguage = [
+  "Javascript-",
+  "Typescript-",
+  "Golang-",
+  "SQL-",
+];
 
 export const MenuConfig = ["Deploy", "Get started"];
