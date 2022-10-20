@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
@@ -33,6 +33,7 @@ export async function getStaticProps() {
 
 const Home = ({ posts }: Posts) => {
   const { search } = useSelector(searchSelector);
+
   const title = redundancyArray(
     posts
       .filter(
@@ -75,7 +76,6 @@ const Home = ({ posts }: Posts) => {
         return (
           <div key={e} className="home">
             <h1 className="home_title">{e}</h1>
-
             <div className="home_card">
               {fileName?.map((e2) => {
                 if (e2.frontmatter.title === e) {
@@ -98,13 +98,11 @@ const Home = ({ posts }: Posts) => {
                           <span>{e2.frontmatter.popular}</span>
                         </div>
                       </span>
-
                       <div className="home_card_content_link">
                         <Link href={`/markdown/${e2.slug}`}>
                           <a href="">{e2.frontmatter.name}</a>
                         </Link>
                       </div>
-
                       <div className="home_card_content_icon">
                         <a
                           href={`/markdown/${e2.slug}`}

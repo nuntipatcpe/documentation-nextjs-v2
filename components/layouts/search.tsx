@@ -27,8 +27,10 @@ export default function Search({ isSearch }: Props) {
   }, [searchTerm, dispatch]);
 
   useEffect(() => {
-    setSearchTerm("");
-  }, [search === " ", dispatch]);
+    if (search === " ") {
+      setSearchTerm("");
+    }
+  }, [search, dispatch]);
 
   return (
     <div
