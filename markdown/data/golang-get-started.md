@@ -18,10 +18,23 @@ name: "Get started"
   go mod init name
   ```
 
+- server.go
+
+  ```
+  package main
+
+  import "fmt"
+
+  func main() {
+    fmt.Println("Hello golang")
+  }
+  ```
+
 - Run
 
   ```
   go run .\index.go
+
   ```
 
 - Build **execution file**
@@ -34,16 +47,26 @@ name: "Get started"
 
 - node mon
 
-  ```
-  npm i -g nodemon
-  ```
+```
 
-  ```
-  nodemon --exec go run .\index.go
-  ```
+npm i -g nodemon
+
+```
+
+```
+
+nodemon --exec go run .\index.go
+
+```
 
 - go-mon **mac or linux**
 
-  ```
-  npx go-mon name.go
-  ```
+```
+
+npx go-mon name.go
+
+```
+
+```
+
+```
