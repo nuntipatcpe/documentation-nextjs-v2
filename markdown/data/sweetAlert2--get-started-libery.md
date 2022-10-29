@@ -9,5 +9,5 @@ name: "SweetAlert2 lib"
 - install [Documentation](https://sweetalert2.github.io/)
 
   ```
-  pnpm i html-react-parser
+  pnpm install sweetalert2
   ```
