@@ -12,13 +12,12 @@ import authenSlice, {
 } from "@/store/slices/authenSlice";
 import { TOKEN } from "@/utils/constant";
 import { useAppDispatch } from "@/store/store";
-import Auth from "@/components/auth";
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync("markdown/data");
+  const files = fs.readdirSync("markdown/data/roadMap/");
   const paths = files.map((fileName) => ({
     params: {
-      mdSlug: fileName.replace(".md", ""),
+      slug: fileName.replace(".md", ""),
     },
   }));
   return {
@@ -27,8 +26,8 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { mdSlug } }: any) {
-  const fileName = fs.readFileSync(`markdown/data/${mdSlug}.md`, "utf-8");
+export async function getStaticProps({ params: { slug } }: any) {
+  const fileName = fs.readFileSync(`markdown/data/roadMap/${slug}.md`, "utf-8");
   const { content } = matter(fileName);
   return {
     props: {

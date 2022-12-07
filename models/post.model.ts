@@ -9,6 +9,7 @@ export interface Posts {
     slug: string;
     frontmatter: frontmatter;
   }>;
+  link: string;
 }
 export interface test {
   t1: [];

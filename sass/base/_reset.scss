@@ -26,3 +26,17 @@ h1 {
 .lora {
   font-family: "Lora", serif;
 }
+.btn {
+  padding: 0.4rem 0rem;
+  margin-left: 1rem;
+  color: $primary-1;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    transition: 100ms ease-in;
+    border-bottom: 2px solid $primary-1;
+  }
+  &_active {
+    transition: 100ms ease-in;
+    border-bottom: 2px solid $primary-1;
+  }
+}
