@@ -18,8 +18,6 @@ function Layout({ children, isSearch }: Props) {
   const [open, setOpen] = useState(true);
   const dispatch = useAppDispatch();
 
-  const [value, setValue] = useState("");
-
   const hendleOpen = () => {
     setOpen(!open);
   };
@@ -33,7 +31,6 @@ function Layout({ children, isSearch }: Props) {
         <div
           onClick={() => {
             dispatch(clearSearch());
-            setValue("");
           }}
         >
           <Link href={"/"}>
@@ -52,16 +49,26 @@ function Layout({ children, isSearch }: Props) {
       </div>
 
       <Content open={open} setOpen={hendleOpen}>
-        {PAGE_GROP.map((e) => (
-          <Link href={e.path} key={e.path}>
-            <a
-              className={router.pathname == e.path ? "btn btn_active" : "btn"}
-              href=""
-            >
-              {e.name}
-            </a>
-          </Link>
-        ))}
+        <div
+          style={{
+            margin: "2rem auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
+            width: "60%",
+            gap: "20px",
+          }}
+        >
+          {PAGE_GROP.map((e) => (
+            <Link href={e.path} key={e.path}>
+              <a
+                className={router.pathname == e.path ? "btn btn_active" : "btn"}
+                href=""
+              >
+                {e.name}
+              </a>
+            </Link>
+          ))}
+        </div>
 
         {children}
       </Content>
