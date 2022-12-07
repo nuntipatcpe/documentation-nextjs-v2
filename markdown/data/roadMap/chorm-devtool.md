@@ -1,6 +1,6 @@
 ---
 title: "Chorm Devtool"
-popular: 100
+popular: 2
 name: "Extension"
 ---
 
