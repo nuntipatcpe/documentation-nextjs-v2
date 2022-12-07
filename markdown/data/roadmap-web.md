@@ -66,3 +66,8 @@ name: "roadmap web"
 1. Node.Js
    - Express [Link](https://expressjs.com/)
    - Sequelize [Link](https://sequelize.org/)
+1. API
+1. SQL
+1. Database
+   - RDBMS
+   - NoSql
