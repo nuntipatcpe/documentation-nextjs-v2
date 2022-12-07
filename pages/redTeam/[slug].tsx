@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
 import Layout from "@/components/layouts";
 import { useSelector } from "react-redux";
-import authenSlice, {
-  authenSelector,
-  setAuthen,
-} from "@/store/slices/authenSlice";
+import { authenSelector, setAuthen } from "@/store/slices/authenSlice";
 import { TOKEN } from "@/utils/constant";
 import { useAppDispatch } from "@/store/store";
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync("markdown/data/cyber/");
+  const files = fs.readdirSync("markdown/data/redTeam/");
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace(".md", ""),
@@ -27,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }: any) {
-  const fileName = fs.readFileSync(`markdown/data/cyber/${slug}.md`, "utf-8");
+  const fileName = fs.readFileSync(`markdown/data/redTeam/${slug}.md`, "utf-8");
   const { content } = matter(fileName);
   return {
     props: {
@@ -50,7 +46,6 @@ function MarkdownPage({ content }: any) {
   return (
     <Layout>
       {/* {!isAuthen && <Auth />} */}
-
       <div className="markdown">
         <Markdown
           options={{

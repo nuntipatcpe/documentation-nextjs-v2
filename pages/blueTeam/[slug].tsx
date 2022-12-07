@@ -10,7 +10,7 @@ import { TOKEN } from "@/utils/constant";
 import { useAppDispatch } from "@/store/store";
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync("markdown/data/other/");
+  const files = fs.readdirSync("markdown/data/blueTeam/");
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace(".md", ""),
@@ -23,7 +23,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }: any) {
-  const fileName = fs.readFileSync(`markdown/data/other/${slug}.md`, "utf-8");
+  const fileName = fs.readFileSync(
+    `markdown/data/blueTeam/${slug}.md`,
+    "utf-8"
+  );
   const { content } = matter(fileName);
   return {
     props: {
@@ -46,7 +49,6 @@ function MarkdownPage({ content }: any) {
   return (
     <Layout>
       {/* {!isAuthen && <Auth />} */}
-
       <div className="markdown">
         <Markdown
           options={{

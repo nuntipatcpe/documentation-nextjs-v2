@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import Code from "@/components/Code";
 import Layout from "@/components/layouts";
 import { useSelector } from "react-redux";
-import authenSlice, {
-  authenSelector,
-  setAuthen,
-} from "@/store/slices/authenSlice";
+import { authenSelector, setAuthen } from "@/store/slices/authenSlice";
 import { TOKEN } from "@/utils/constant";
 import { useAppDispatch } from "@/store/store";
 

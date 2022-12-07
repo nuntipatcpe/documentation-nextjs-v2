@@ -8,7 +8,7 @@ import { Posts } from "../models/post.model";
 import Home from "@/components/pages/home";
 
 export async function getStaticProps() {
-  let folderName = "cyber";
+  let folderName = "blueTeam";
   const files = fs.readdirSync(`markdown/data/${folderName}`);
   //sort by popula
   const posts = sortArray(
@@ -32,9 +32,9 @@ export async function getStaticProps() {
   };
 }
 
-const cyber = ({ posts }: Posts) => {
-  let markdown = "cyber";
+const BlueTeam = ({ posts }: Posts) => {
+  let markdown = "blueTeam";
   return <Home posts={posts} link={markdown} />;
 };
 
-export default cyber;
+export default BlueTeam;

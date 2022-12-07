@@ -36,7 +36,11 @@ export const PAGE_GROP = [
     name: "Backend",
   },
   {
-    path: "/cyber",
-    name: "Cyber",
+    path: "/blueTeam",
+    name: "Blue Team",
+  },
+  {
+    path: "/redTeam",
+    name: "Red Team",
   },
 ];

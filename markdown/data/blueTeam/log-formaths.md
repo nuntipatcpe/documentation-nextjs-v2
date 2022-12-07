@@ -1,7 +1,7 @@
 ---
-title: "LOG FILE FORMATS"
+title: "Log file formaths"
 popular: 0
-name: "LOG file formaths"
+name: "Log file formaths"
 ---
 
 # LOG file formaths
