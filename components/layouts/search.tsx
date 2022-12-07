@@ -68,7 +68,7 @@ export default function Search({ isSearch }: Props) {
         </div>
       </div>
 
-      {isSearch ? (
+      {/* {isSearch ? (
         <div className={`search_box ${disable && "search_box_open"}`}>
           <h3>Dev Tools</h3>
           <div className="search_box_menu">
@@ -122,7 +122,7 @@ export default function Search({ isSearch }: Props) {
         </div>
       ) : (
         <span />
-      )}
+      )} */}
     </div>
   );
 }
