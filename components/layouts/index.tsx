@@ -1,5 +1,6 @@
 import { clearSearch, setSearch } from "@/store/slices/postSlice";
 import { useAppDispatch } from "@/store/store";
+import { PAGE_GROP } from "@/utils/constant";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -51,30 +52,16 @@ function Layout({ children, isSearch }: Props) {
       </div>
 
       <Content open={open} setOpen={hendleOpen}>
-        <Link href={"/"}>
-          <a
-            className={router.pathname == "/" ? "btn btn_active" : "btn"}
-            href=""
-          >
-            Other
-          </a>
-        </Link>
-        <Link href={"/cyber"}>
-          <a
-            className={router.pathname == "/cyber" ? "btn btn_active" : "btn"}
-            href=""
-          >
-            Cyber
-          </a>
-        </Link>
-        <Link href={"/roadMap"}>
-          <a
-            className={router.pathname == "/roadMap" ? "btn btn_active" : "btn"}
-            href=""
-          >
-            roadMap
-          </a>
-        </Link>
+        {PAGE_GROP.map((e) => (
+          <Link href={e.path} key={e.path}>
+            <a
+              className={router.pathname == e.path ? "btn btn_active" : "btn"}
+              href=""
+            >
+              {e.name}
+            </a>
+          </Link>
+        ))}
 
         {children}
       </Content>

@@ -8,7 +8,7 @@ import { Posts } from "../models/post.model";
 import Home from "@/components/pages/home";
 
 export async function getStaticProps() {
-  let folderName = "other";
+  let folderName = "frontend";
   const files = fs.readdirSync(`markdown/data/${folderName}`);
   //sort by popula
   const posts = sortArray(
@@ -32,9 +32,9 @@ export async function getStaticProps() {
   };
 }
 
-const app = ({ posts }: Posts) => {
-  let markdown = "markdown";
+const frontend = ({ posts }: Posts) => {
+  let markdown = "frontend";
   return <Home posts={posts} link={markdown} />;
 };
 
-export default app;
+export default frontend;

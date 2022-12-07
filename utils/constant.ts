@@ -17,3 +17,22 @@ export const MenuBasicLanguage = [
 ];
 
 export const MenuConfig = ["Config", "Deploy", "Get started"];
+
+export const PAGE_GROP = [
+  {
+    path: "/",
+    name: "Other",
+  },
+  {
+    path: "/cyber",
+    name: "Cyber",
+  },
+  {
+    path: "/roadMap",
+    name: "Road Map",
+  },
+  {
+    path: "/frontend",
+    name: "Frontend",
+  },
+];
