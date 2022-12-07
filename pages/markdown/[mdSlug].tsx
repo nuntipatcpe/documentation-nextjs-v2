@@ -50,7 +50,7 @@ function MarkdownPage({ content }: any) {
 
   return (
     <Layout>
-      {!isAuthen && <Auth />}
+      {/* {!isAuthen && <Auth />} */}
 
       <div className="markdown">
         <Markdown
