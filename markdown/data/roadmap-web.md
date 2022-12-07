@@ -9,6 +9,10 @@ name: "roadmap web"
 ## Forntend
 
 1. Git (Command Lines) [Link](https://git-scm.com/)
+   - git init
+   - git add .
+   - git commit -m "\_\_"
+   - git push
 1. Git hub [Link](https://github.com/)
 1. Vscode shortcut [Link](https://www.desuvit.com/11-vscode-keyboard-shortcuts-that-will-boost-your-productivity/)
 1. Basic command line (windows => Powershell)
@@ -25,6 +29,8 @@ name: "roadmap web"
 1. html (JSX)
 1. CSS
 1. JavaScript
+1. Local storage
+1. Cookies
 1. Node.js **what it is?**
 1. package manager
    - pnpm **recommend** [Link](https://pnpm.io/)
