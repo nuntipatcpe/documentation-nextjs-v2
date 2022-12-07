@@ -24,15 +24,19 @@ export const PAGE_GROP = [
     name: "Other",
   },
   {
-    path: "/cyber",
-    name: "Cyber",
-  },
-  {
     path: "/roadMap",
     name: "Road Map",
   },
   {
     path: "/frontend",
     name: "Frontend",
+  },
+  {
+    path: "/backend",
+    name: "Backend",
+  },
+  {
+    path: "/cyber",
+    name: "Cyber",
   },
 ];

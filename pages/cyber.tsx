@@ -33,7 +33,7 @@ export async function getStaticProps() {
 }
 
 const cyber = ({ posts }: Posts) => {
-  let markdown = "cyber-markdown";
+  let markdown = "cyber";
   return <Home posts={posts} link={markdown} />;
 };
 

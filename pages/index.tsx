@@ -33,7 +33,7 @@ export async function getStaticProps() {
 }
 
 const app = ({ posts }: Posts) => {
-  let markdown = "markdown";
+  let markdown = "other";
   return <Home posts={posts} link={markdown} />;
 };
 
