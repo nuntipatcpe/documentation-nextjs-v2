@@ -36,7 +36,7 @@ export async function getStaticProps({ params: { slug } }: any) {
   };
 }
 
-function other({ content }: any) {
+function MarkdownPage({ content }: any) {
   const { isAuthen } = useSelector(authenSelector);
   const dispath = useAppDispatch();
 
@@ -68,4 +68,4 @@ function other({ content }: any) {
   );
 }
 
-export default other;
+export default MarkdownPage;

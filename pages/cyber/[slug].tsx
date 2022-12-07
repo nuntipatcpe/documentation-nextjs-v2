@@ -36,7 +36,7 @@ export async function getStaticProps({ params: { slug } }: any) {
   };
 }
 
-function cyber({ content }: any) {
+function MarkdownPage({ content }: any) {
   const { isAuthen } = useSelector(authenSelector);
   const dispath = useAppDispatch();
 
@@ -68,4 +68,4 @@ function cyber({ content }: any) {
   );
 }
 
-export default cyber;
+export default MarkdownPage;
