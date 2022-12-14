@@ -8,7 +8,7 @@ interface initialStateInterface {
 
 //initial________________________
 const initialState: initialStateInterface = {
-  isAuthen: true,
+  isAuthen: false,
 };
 
 //createSlice________________________
@@ -19,11 +19,14 @@ const authenSlice = createSlice({
     setAuthen: (state, action: PayloadAction<any>) => {
       state.isAuthen = action.payload;
     },
+    singOut: (state, action: PayloadAction<any>) => {
+      state.isAuthen = false;
+    },
   },
 });
 
 //actionCreator
-export const { setAuthen } = authenSlice.actions;
+export const { setAuthen, singOut } = authenSlice.actions;
 //Selector
 export const authenSelector = (store: RootState) => store.authenReducer;
 

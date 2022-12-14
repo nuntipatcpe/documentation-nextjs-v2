@@ -6,6 +6,7 @@ import { sortArray } from "@/utils/array.util";
 import { Posts } from "../models/post.model";
 
 import Home from "@/components/pages/home";
+import withAuth from "@/components/potected/withAuth";
 
 export async function getStaticProps() {
   let folderName = "blueTeam";
@@ -37,4 +38,4 @@ const BlueTeam = ({ posts }: Posts) => {
   return <Home posts={posts} link={markdown} />;
 };
 
-export default BlueTeam;
+export default withAuth(BlueTeam);
