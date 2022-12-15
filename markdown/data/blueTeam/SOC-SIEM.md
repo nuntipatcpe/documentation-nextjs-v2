@@ -1,12 +1,15 @@
 ---
-title: "SIEM"
+title: "SOC"
 popular: 100
 name: "SIEM"
 ---
 
 # SIEM
 
-- Security information and event management (SIEM)
+- Security information and event management (SIEM), is a security solution that provides the real time logging of events in an environment. The actual purpose for event logging is to detect security threats.
+
+- filter the data that they collect
+- create alerts for any suspicious events.
 
 # Log Collection
 
