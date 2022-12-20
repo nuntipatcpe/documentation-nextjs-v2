@@ -1,12 +1,9 @@
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
-
 import { sortArray } from "@/utils/array.util";
 import { Posts } from "../models/post.model";
-
 import Home from "@/components/pages/home";
-import withAuth from "@/components/potected/withAuth";
 
 export async function getStaticProps() {
   let folderName = "blueTeam";
@@ -32,10 +29,9 @@ export async function getStaticProps() {
     },
   };
 }
-
 const BlueTeam = ({ posts }: Posts) => {
   let markdown = "blueTeam";
   return <Home posts={posts} link={markdown} />;
 };
 
-export default withAuth(BlueTeam);
+export default BlueTeam;

@@ -18,7 +18,7 @@ function Login({}: Props) {
     if (!localStorage.getItem(TOKEN)) {
       dispath(setAuthen(false));
     }
-  }, [selec.isAuthen]);
+  }, [selec.isAuthen, dispath]);
 
   return (
     <div className="login">

@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 import { authenSelector, setAuthen } from "@/store/slices/authenSlice";
 import { TOKEN } from "@/utils/constant";
 import { useAppDispatch } from "@/store/store";
-import withAuth from "@/components/potected/withAuth";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("markdown/data/blueTeam/");
