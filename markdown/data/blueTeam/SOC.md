@@ -19,7 +19,7 @@ name: "SOC"
 
 # SOC Positions
 
-- SOC Analyst
+- SOC AnalystGI
 - Incident Responder
 - Threat Hunter
 - Security Engineer

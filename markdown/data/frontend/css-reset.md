@@ -9,9 +9,10 @@ name: "Reset css"
 - base
 
   ```
-  {
+  * {
     box-sizing: border-box;
   }
+
   body {
     display: flex;
     align-items: center;
@@ -20,6 +21,7 @@ name: "Reset css"
     margin: 0;
     padding: 0;
   }
+
   a {
     text-decoration: none;
   }
