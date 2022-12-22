@@ -15,24 +15,32 @@ name: "SIEM"
 
 ## Log Agents
 
-- easy to test ,deverlop
-- developers
+- Install software to server
+- Gather Log before going to SIEM.
+- Parsing
+- Log location
+- log entity
+- buffering
+- encryption
 - Syslog log transfers UDP is 1024 bytes
-- 3rd Party Agents
-
-  - Splunk: universal forwarder
-  - ArcSight: ArcSight Connectors
 
 ## Agentless
 
+- Not install software
+- Use the software available in the system.
+  - SSH protocol
+  - WMI (Windows Management Instrumentation)
+
 # Log Aggregation and Parsing
 
-- Aggregator EPS (event per second)
+- Aggregator EPS (event per second), **Effect** to Storage , How much storage do you use?
 - Log Aggregator Process (parsing, filtering, and enrichment.)
 
 # Log Storage
 
-- most important for SIEM storage -> Speed
+- Most important for SIEM storage -> **Effect** Speed
+- mySQL (CRUD)
+- Indexing [WORM (write once, read many)] **Serach to speed**
 
 # Alerting
 

@@ -26,3 +26,7 @@ name: "SOC Analyst"
 ## Malware Analysis
 
 - It is important to at least determine what the malicious file’s command and control center is and whether or not there is a device communicating with this address.
+
+# EDR - Endpoint Detection and Response
+
+- also known as endpoint threat detection and response (ETDR)
