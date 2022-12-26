@@ -1,5 +1,5 @@
 ---
-title: "Log file formaths"
+title: "Cyber ​​Kill Chain model"
 popular: 0
 name: "Cyber ​​Kill Chain model "
 ---
