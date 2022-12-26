@@ -28,12 +28,6 @@ name: "Talegram"
      demo_xxxx_bot
      ```
 
-   - Get Token HTTP API
-
-     ```
-     Create bot
-     ```
-
 3. Create **new channel**
 4. Add new bot to new channel **administrators**
 
