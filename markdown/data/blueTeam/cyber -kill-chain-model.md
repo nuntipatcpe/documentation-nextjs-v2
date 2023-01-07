@@ -7,6 +7,7 @@ name: "Cyber ​​Kill Chain model "
 # Cyber ​​Kill Chain model
 
 1. Reconnaissance
+   - The attacker collects data about the target and the tactics for the attack.
 1. Weaponization
 1. Delivery
 1. Exploitation
