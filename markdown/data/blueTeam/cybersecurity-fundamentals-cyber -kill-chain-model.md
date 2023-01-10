@@ -1,5 +1,5 @@
 ---
-title: "Cyber ​​Kill Chain model"
+title: "Cybersecurity Fundamentals"
 popular: 0
 name: "Cyber ​​Kill Chain model "
 ---
